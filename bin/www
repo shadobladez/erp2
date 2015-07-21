@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+var app = require('./../server/node_app.js');
+app.listen(3000, function(){
+	console.log("Listening on port 3000");
+});

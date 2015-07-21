@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns = "http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <title>Advent JKYSoftware</title>
+        <link rel="stylesheet" href="root.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel='stylesheet' href="bootstrap.min.css"/>
+
+    </head>
+    <body>
+
+    <tr id="jky-body">
+
+        <ul id="jky-menus">
+            <li id="jky-menu-sales"><a onclick="JKY.process_menu('jky-menu-sales')">Sales</a></li>
+            <li id="jky-menu-planning"><a onclick="JKY.process_menu('jky-menu-planning')">Planning</a></li>
+            <li id="jky-menu-production"><a onclick="JKY.process_menu('jky-menu-production')">Production</a></li>
+            <li id="jky-menu-threads"><a onclick="JKY.process_menu('jky-menu-threads')">Threads</a></li>
+            <li id="jky-menu-boxes"><a onclick="JKY.process_menu('jky-menu-boxes')">Boxes</a></li>
+            <li id="jky-menu-dyers"><a onclick="JKY.process_menu('jky-menu-dyers')">Dyers</a></li>
+            <li id="jky-menu-pieces"><a onclick="JKY.process_menu('jky-menu-pieces')">Pieces</a></li>
+            <li id="jky-menu-receiving"><a onclick="JKY.process_menu('jky-menu-receiving')">Receiving</a></li>
+            <li id="jky-menu-fabrics"><a onclick="JKY.process_menu('jky-menu-fabrics')">Fabrics</a></li>
+            <li id="jky-menu-help" class=""><a onclick="JKY.process_menu('jky-menu-help')">Help</a></li>
+            <li id="jky-menu-admin" class=""><a onclick="JKY.process_menu('jky-menu-admin')">Admin</a></li>
+            <li id="jky-menu-support" class=""><a onclick="JKY.process_menu('jky-menu-support')">Support</a></li>
+        </ul>
+
+        <div>
+            <div>
+                <h1>Index</h1>
+                <span id="jky-app-select-line" style="display: block;">
+                <button id="jky-action-add-new" class="btn btn-success" type="button" title="Click here to add new record" style="display: inline-block; cursor: pointer;">
+                    <span>Add&nbsp;New</span>
+                </button>
+                <input id="jky-app-filter" class="search-query" type="text" placeholder="Search">
+                <span id="jky-app-select-label">Group Set</span>:
+                <select id="jky-app-select"></select>
+                </span>
+            </div>
+        </div>
+
+        <table id="jky-app-table" class="table table-striped tablesorter tablesorter-default" style="display: table;">
+            <thead>
+                <tr class="tablesorter-headerRow">
+                    <th class="jky-td-checkbox tablesorter-header sorter-false" data-column="0" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner">
+                            <input id="jky-check-all" type="checkbox" title="Click here to check all records" placeholder="">
+                        </div>
+                    </th>
+                    <th class="jky-td-input tablesorter-header tablesorter-headerAsc" data-column="1" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Sequence</span></div>
+                    </th>
+                    <th class="jky-td-normal tablesorter-header tablesorter-headerAsc" data-column="2" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Name</span></div>
+                    </th>
+                    <th class="jky-td-normal tablesorter-header" data-column="3" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Value</span></div>
+                    </th>
+                    <th class="jky-td-status tablesorter-header" data-column="4" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Status</span></div>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody id="jky-table-body">
+            </tbody>
+        </table>
+
+        <div id="jky-app-navs" class="btn-group" style="float: left; display: block;">
+            <button id="jky-action-prev" class="btn" title="Previous"><i class="icon-backward"></i></button>
+            <button id="jky-action-next" class="btn" title="Next"><i class="icon-forward"></i></button>
+        </div>
+
+        <div id="jky-form-data">
+            <div class="jky-left">
+                <div class="jky-form-line"><div class="jky-form-label"><span>Status</span>:</div>
+                    <input type="hidden" id= "jky-id" />
+                    <select id="jky-status">
+                        <option value="Active" selected="selected">Active</option>
+                        <option value="History">History</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                </div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Sequence</span>:</div><input id="jky-sequence" class="jky-form-input" placeholder=""></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Name</span>:</div><input id="jky-name" class="jky-form-normal" placeholder="Name"></div>
+                <div class="jky-form-free"><div class="jky-form-label"><span>Value</span>:</div><textarea id="jky-value" class="jky-form-text" placeholder="Value"></textarea></div>
+            </div>
+            <div class="jky-clear"></div>
+            <br>
+
+            <div>
+                <div class="jky-form-label"></div>
+                <div class="jky-form-buttons">
+                          <button id="jky-action-save" class="btn btn-success" type="button" title="Click here to save all changes" style="display: inline-block;"><span>Save</span></button>
+                    &nbsp;<button id="jky-action-copy" class="btn btn-success" type="button" title="Click here to duplicate this record" style="display: inline-block;"><span>Copy</span></button>
+                    &nbsp;<button id="jky-action-delete" class="btn" type="button" title="Click here to delete this record" style="cursor: pointer; display: inline-block;"><span>Delete</span></button>
+                    &nbsp;<button id="jky-action-cancel" class="btn" type="button" title="Click here to cancel any changes" style="display: inline-block;"><span>Cancel</span></button>
+                </div>
+            </div>
+            <div class="jky-clear"></div>
+        </div>
+    </tr>
+
+        <script src="jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/control.js"></script>
+    </body>
+</html>

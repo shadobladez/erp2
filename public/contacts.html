@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns = "http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <title>Advent JKYSoftware</title>
+        <link rel="stylesheet" href="root.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel='stylesheet' href="bootstrap.min.css"/>
+
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Contacts</h1>
+                <span id="jky-app-select-line" style="display: block;">
+                <button id="jky-action-add-new" class="btn btn-success" type="button" title="Click here to add new record" style="display: inline-block; cursor: pointer;">
+                    <span>Add&nbsp;New</span>
+                </button>
+                <input id="jky-app-filter" class="search-query" type="text" placeholder="Search">
+                <span id="jky-app-select-label">Status</span>:
+                <select id="jky-app-select"></select>
+                </span>
+            </div>
+        </div>
+
+<!--Data Table-->
+        <table id="jky-app-table" class="table table-striped tablesorter tablesorter-default" style="display: table;">
+            <thead>
+                <tr class="tablesorter-headerRow">
+                    <th class="jky-td-checkbox sorter-false" data-column="0" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner">
+                            <input id="jky-check-all" type="checkbox" title="Click here to check all records" placeholder="">
+                        </div>
+                    </th>
+                    <th class="jky-td-date" data-column="1" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Nick Name</span></div>
+                    </th>
+                    <th class="jky-td-hour" data-column="2" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Mobile</span></div>
+                    </th>
+                    <th class="jky-td-priority" data-column="3" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Email</span></div>
+                    </th>
+                    <th class="jky-td-category" data-column="4" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>User Name</span></div>
+                    </th>
+                    <th class="jky-td-description" data-column="5" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>User Role</span></div>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody id="jky-table-body">
+            </tbody>
+        </table>
+
+<!--Form Data-->
+
+        <div id="jky-app-navs" class="btn-group" style="float: left; display: block;">
+            <button id="jky-action-prev" class="btn" title="Previous"><i class="icon-backward"></i></button>
+            <button id="jky-action-next" class="btn" title="Next"><i class="icon-forward"></i></button>
+        </div>
+
+        <div id="jky-form-data">
+            <div class="jky-left">
+                <div class="jky-form-line"><div class="jky-form-label"><span>Nick Name</span>:</div><input id="jky-nick-name" class="jky-form-input" placeholder=""></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>First Name</span>:</div><input id="jky-first-name" class="jky-form-input" placeholder=""></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Last Name</span>:</div><input id="jky-last-name" class="jky-form-input" placeholder=""></div>
+
+                <div class="jky-form-line"><div class="jky-form-label"><span>Company</span>:</div><select id="jky-company"></select></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Credit Limit</span>:</div><input id="jky-credit-limit" class="jky-form-input" placeholder=""></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Phone</span>:</div><input id="jky-phone" class="jky-form-input" placeholder=""></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Mobile</span>:</div><input id="jky-mobile" class="jky-form-input" placeholder=""></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Position</span>:</div><input id="jky-position" class="jky-form-input" placeholder=""></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Email</span>:</div><input id="jky-email" class="jky-form-input" placeholder=""></div>
+
+                <div class="jky-form-line"><div class="jky-form-label"><span>User Name</span>:</div><input id="jky-user-name" class="jky-form-input" placeholder=""></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>User Role</span>:</div><select id="jky-user-role"></select></div>
+            </div>
+
+            <div class="jky-clear"></div>
+            <br>
+
+            <div>
+                <div class="jky-form-label"></div>
+                <div class="jky-form-buttons">
+                          <button id="jky-action-save" class="btn btn-success" type="button" title="Click here to save all changes" style="display: inline-block;"><span>Save</span></button>
+                    &nbsp;<button id="jky-action-reset-password" class="btn btn-success" type="button" title="Click here to reset password" style="display: inline-block;"><span>Reset Password</span></button>
+                    &nbsp;<button id="jky-action-delete" class="btn" type="button" title="Click here to delete this record" style="cursor: pointer; display: inline-block;"><span>Delete</span></button>
+                    &nbsp;<button id="jky-action-cancel" class="btn" type="button" title="Click here to cancel any changes" style="display: inline-block;"><span>Cancel</span></button>
+                </div>
+            </div>
+            <div class="jky-clear"></div>
+        </div>
+
+        <script src="jquery.js"></script>
+        <script src="js/contacts.js.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

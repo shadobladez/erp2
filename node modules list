@@ -1,0 +1,9 @@
+Required:
+    express
+    body-parser
+    node-inspector
+    redis
+
+Optional:
+    bootstrap
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns = "http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <title>Advent JKYSoftware</title>
+        <link rel="stylesheet" href="root.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel='stylesheet' href="bootstrap.min.css"/>
+
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Tickets</h1>
+                <span id="jky-app-select-line" style="display: block;">
+                <button id="jky-action-add-new" class="btn btn-success" type="button" title="Click here to add new record" style="display: inline-block; cursor: pointer;">
+                    <span>Add&nbsp;New</span>
+                </button>
+                <input id="jky-app-filter" class="search-query" type="text" placeholder="Search">
+                <span id="jky-app-select-label">Status</span>:
+                <select id="jky-app-select"></select>
+                </span>
+            </div>
+        </div>
+
+<!--Data Table-->
+        <table id="jky-app-table" class="table table-striped tablesorter tablesorter-default" style="display: table;">
+            <thead>
+                <tr class="tablesorter-headerRow">
+                    <th class="jky-td-checkbox sorter-false" data-column="0" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner">
+                            <input id="jky-check-all" type="checkbox" title="Click here to check all records" placeholder="">
+                        </div>
+                    </th>
+                    <th class="jky-td-date" data-column="1" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Opened At</span></div>
+                    </th>
+                    <th class="jky-td-hour" data-column="2" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Worked Hour</span></div>
+                    </th>
+                    <th class="jky-td-priority" data-column="3" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Priority</span></div>
+                    </th>
+                    <th class="jky-td-category" data-column="4" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Category</span></div>
+                    </th>
+                    <th class="jky-td-description" data-column="5" tabindex="0" unselectable="on" style="-webkit-user-select: none;">
+                        <div class="tablesorter-header-inner"><span>Description</span></div>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody id="jky-table-body">
+            </tbody>
+        </table>
+
+        <div id="jky-app-navs" class="btn-group" style="float: left; display: block;">
+            <button id="jky-action-prev" class="btn" title="Previous"><i class="icon-backward"></i></button>
+            <button id="jky-action-next" class="btn" title="Next"><i class="icon-forward"></i></button>
+        </div>
+
+<!--Form Data-->
+        <div id="jky-form-data">
+            <div class="jky-left">
+                <div class="jky-form-line"><div class="jky-form-label"><span>Open</span>:</div>
+                    <input type="hidden" id= "jky-id" />
+                    <input disabled id="jky-opened-at" class="jky-form-date-time" placeholder="">
+                    <input disabled id="jky-opened-by" class="jky-form-date-by" placeholder="">
+                </div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Assigned</span>:</div>
+                    <input disabled id="jky-assigned-at" class="jky-form-date-time" placeholder="">
+                    <input disabled id="jky-assigned-by" class="jky-form-date-by" placeholder="">
+                </div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Closed</span>:</div>
+                    <input disabled id="jky-closed-at" class="jky-form-date-time" placeholder="">
+                    <input disabled id="jky-closed-by" class="jky-form-date-by" placeholder="">
+                </div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Priority</span>:</div><select id="jky-priority"></select></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Category</span>:</div><select id="jky-category"></select></div>
+                <div class="jky-form-line"><div class="jky-form-label"><span>Worked</span>:</div><input id="jky-worked" class="jky-form-input" placeholder=""></div>
+                <div class="jky-form-free"><div class="jky-form-label"><span>Description</span>:</div><textarea id="jky-description" class="jky-form-text" placeholder="Value"></textarea></div>
+                <div class="jky-form-free"><div class="jky-form-label"><span>Resolution</span>:</div><textarea id="jky-resolution" class="jky-form-text" placeholder="Value"></textarea></div>
+            </div>
+
+            <div class="jky-clear"></div>
+            <br>
+
+            <div>
+                <div class="jky-form-label"></div>
+                <div class="jky-form-buttons">
+                          <button id="jky-action-save" class="btn btn-success" type="button" title="Click here to save all changes" style="display: inline-block;"><span>Save</span></button>
+                    &nbsp;<button id="jky-action-delete" class="btn" type="button" title="Click here to delete this record" style="cursor: pointer; display: inline-block;"><span>Delete</span></button>
+                    &nbsp;<button id="jky-action-cancel" class="btn" type="button" title="Click here to cancel any changes" style="display: inline-block;"><span>Cancel</span></button>
+                </div>
+            </div>
+            <div class="jky-clear"></div>
+        </div>
+
+        <script src="jquery.js"></script>
+        <script src="js/tickets.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
