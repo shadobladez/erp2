@@ -16,8 +16,15 @@ var get_where = function(the_id) {
 
 var get_set = function(the_request) {
 	return    ' SET status = "' + the_request.status		+ '"'
-		+ ', estimate_hour =  ' + the_request.estimate_hour
-		+   ', worked_hour =  ' + the_request.worked_hour
+	    +      ', category = "' + the_request.category		+ '"'
+        +     ', opened_at = "' + the_request.opened_at		+ '"'
+        +     ', opened_by =  ' + the_request.opened_by
+        +   ', assigned_at = "' + the_request.assigned_at	+ '"'
+        +   ', assigned_by =  ' + the_request.assigned_by
+        +     ', closed_at = "' + the_request.closed_at		+ '"'
+        +     ', closed_by =  ' + the_request.closed_by
+//		+ ', estimate_hour =  ' + the_request.estimate_hour
+//		+   ', worked_hour =  ' + the_request.worked_hour
 		+      ', priority = "' + the_request.priority		+ '"'
 		+      ', category = "' + the_request.category		+ '"'
 		+   ', description = "' + the_request.description	+ '"'
