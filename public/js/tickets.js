@@ -1,5 +1,5 @@
 $(function(){
-    $.get('/controls?group_set=Status+Codes', setup_selector);
+    $.get('/controls?select=Status+Codes', setup_selector);
 
     $('#jky-app-select').click (function(){
         setup_group();
@@ -46,7 +46,7 @@ function setup_selector(mytickets) {
 
 function setup_group(){
     var mystatus = $('#jky-app-select').find(":selected").text();
-    $.get('/tickets?status=' + mystatus, appendToList);
+    $.get('/tickets?select=' + mystatus, appendToList);
 };
 
 function appendToList(mytickets) {
@@ -113,7 +113,7 @@ function process_addNew () {
 
 function process_filter (the_id){
     var myfilter= $('#jky-app-filter').val();
-    $.get('/ticketX?filter=' +  myfilter, appendToList);
+    $.get('/tickets?filter=' +  myfilter, appendToList);
 };
 
 function select_row(the_id){

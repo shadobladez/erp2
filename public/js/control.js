@@ -1,5 +1,5 @@
 $(function(){
-    $.get('../controls?group_set=Root', setup_selector);
+    $.get('../controls?select=Root', setup_selector);
 
     $('#jky-app-select').click (function(){
         setup_group();
@@ -46,7 +46,7 @@ function setup_selector(mycontrols) {
 
 function setup_group(){
     var mygroupset = $('#jky-app-select').find(":selected").text();
-    $.get('/controls?group_set=' + mygroupset, appendToList);
+    $.get('/controls?select=' + mygroupset, appendToList);
 };
 
 function appendToList(mycontrols) {
@@ -97,7 +97,7 @@ function process_addNew () {
 
 function process_filter (the_id){
     var myfilter= $('#jky-app-filter').val();
-    $.get('/controlX?filter=' +  myfilter, appendToList);
+    $.get('/controls?filter=' +  myfilter, appendToList);
 };
 
 function select_row(the_id){

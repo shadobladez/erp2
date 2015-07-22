@@ -12,7 +12,7 @@ app_tickets.filter = function(request, response) {
 };
 
 app_tickets.get_tickets = function(request, response) {
-	var my_where = 'group_set = "' + request.query.group_set + '"';
+   	var my_where = 'status = "' + request.query.status + '"';
 	tickets.get_rows(null, my_where, function(the_rows) {
 		response.json(the_rows);
 	});
