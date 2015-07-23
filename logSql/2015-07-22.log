@@ -1,0 +1,113 @@
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T00:59:58.668Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T00:59:59.185Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900455","timestamp":"2015-07-23T01:00:01.432Z"}
+{"level":"info","message":"INSERT Controls SET status = \"undefined\", sequence =  15, group_set = \"Company Types\", name = \"NewName4\", value = \"NewGroup4status=Active\", remarks = \"undefined\"","timestamp":"2015-07-23T01:00:06.746Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:00:06.759Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900466","timestamp":"2015-07-23T01:00:08.660Z"}
+{"level":"info","message":"INSERT Controls SET status = \"undefined\", sequence =  15, group_set = \"Company Types\", name = \"NewName4\", value = \"NewGroup4status=Activestatus=null\", remarks = \"undefined\"","timestamp":"2015-07-23T01:00:16.289Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:00:40.312Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:00:40.326Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:00:40.324Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:00:40.328Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:00:40.324Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:00:40.328Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:00:40.324Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:00:40.328Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T01:00:46.509Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:00:48.204Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:00:48.388Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900466","timestamp":"2015-07-23T01:00:49.569Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:01:25.699Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:01:25.714Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:01:25.711Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:01:25.714Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:01:25.711Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:01:25.714Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:01:25.711Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:01:25.714Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T01:01:27.341Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:01:28.814Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:01:29.122Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900466","timestamp":"2015-07-23T01:01:29.837Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:02:27.433Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:02:27.448Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:02:27.447Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:02:27.450Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:02:27.448Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:02:27.450Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:02:27.448Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:02:27.450Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T01:02:30.856Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:02:31.394Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900466","timestamp":"2015-07-23T01:02:32.494Z"}
+{"level":"info","message":"DELETE   FROM Controls WHERE Controls.id = 900466","timestamp":"2015-07-23T01:02:34.482Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900455","timestamp":"2015-07-23T01:02:38.802Z"}
+{"level":"info","message":"INSERT Controls SET status = \"Active\", sequence =  15, group_set = \"Company Types\", name = \"NewName4\", value = \"NewGroup4\", remarks = \"undefined\"","timestamp":"2015-07-23T01:02:44.189Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:02:44.196Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900467","timestamp":"2015-07-23T01:02:45.625Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900467","timestamp":"2015-07-23T01:02:58.121Z"}
+{"level":"info","message":"INSERT Controls SET status = \"Active\", sequence =  15, group_set = \"Company Types\", name = \"NewName4\", value = \"NewGroup4\", remarks = \"undefined\"","timestamp":"2015-07-23T01:02:59.103Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:03:04.159Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:03:04.174Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:03:04.172Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:03:04.174Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:03:04.172Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:03:04.174Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:03:04.172Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:03:04.174Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T01:03:05.248Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:03:06.372Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:03:06.769Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900467","timestamp":"2015-07-23T01:03:07.475Z"}
+{"level":"info","message":"INSERT Controls SET status = \"Active\", sequence =  15, group_set = \"Company Types\", name = \"NewName5\", value = \"NewGroup5\", remarks = \"undefined\"","timestamp":"2015-07-23T01:03:12.037Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:03:12.051Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Status Codes\"","timestamp":"2015-07-23T01:03:52.617Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Active\"","timestamp":"2015-07-23T01:03:53.776Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Open\"","timestamp":"2015-07-23T01:03:55.015Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE Tickets.id = 200008","timestamp":"2015-07-23T01:03:56.525Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Status Codes\"","timestamp":"2015-07-23T01:04:39.235Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Active\"","timestamp":"2015-07-23T01:04:40.421Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Active\"","timestamp":"2015-07-23T01:04:40.919Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Active\"","timestamp":"2015-07-23T01:04:41.217Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Open\"","timestamp":"2015-07-23T01:04:41.743Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE Tickets.id = 200008","timestamp":"2015-07-23T01:04:42.459Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Open\"","timestamp":"2015-07-23T01:04:47.714Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Active\"","timestamp":"2015-07-23T01:04:48.328Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Active\"","timestamp":"2015-07-23T01:04:48.746Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Open\"","timestamp":"2015-07-23T01:04:50.082Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE 1 AND status = \"Open\"","timestamp":"2015-07-23T01:04:52.567Z"}
+{"level":"info","message":"SELECT *  FROM Tickets WHERE Tickets.id = 200081","timestamp":"2015-07-23T01:04:59.948Z"}
+{"level":"info","message":"UPDATE Tickets SET status = \"undefined\", category = \"null,null\", opened_at = \"2014-05-22 11:13:26\", opened_by =  100003, assigned_at = \"\", assigned_by =  , closed_at = \"\", closed_by =  , priority = \"null\", category = \"null,null\", description = \"Melhorias para a parte de saídas de fios. Só fechar a saída automaticamente quando um TheaderManeger, Gerente ou Admin fechar o lote referente a solicitaçao.\", resolution = \"asd\" WHERE Tickets.id = 200081","timestamp":"2015-07-23T01:05:04.542Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:10:30.614Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:10:30.632Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:10:30.629Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:10:30.634Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:10:30.629Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:10:30.634Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:10:30.630Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:10:30.634Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T01:10:32.194Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:10:33.158Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900468","timestamp":"2015-07-23T01:10:34.243Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:13:48.893Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:13:48.912Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:13:48.910Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:13:48.912Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:13:48.910Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:13:48.912Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:13:48.910Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:13:48.912Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T01:13:50.111Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:13:51.680Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:13:52.086Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE Controls.id = 900468","timestamp":"2015-07-23T01:13:53.081Z"}
+{"level":"info","message":"INSERT Controls SET status = \"Active\", sequence =  15, group_set = \"Company Types\", name = \"NewName5-copy\", value = \"NewGroup5\", remarks = \"undefined\"","timestamp":"2015-07-23T01:13:54.441Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T01:13:54.453Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:24:18.387Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T01:24:18.402Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:24:18.400Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T01:24:18.402Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:24:18.400Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T01:24:18.402Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:24:18.400Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T01:24:18.402Z"}

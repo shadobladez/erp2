@@ -71,7 +71,6 @@ function appendToList(mytickets) {
 
 function process_addNew () {
 
-    var my_group_set =        $('#jky-app-select').val();
     var my_opened_at =        $('#jky-opened-at').val();
     var my_opened_by =        $('#jky-opened-by').val();
     var my_assigned_at =      $('#jky-assigned-at').val();
@@ -85,8 +84,7 @@ function process_addNew () {
     var my_resolution =       $('#jky-resolution').val();
 
     var my_data =
-            'group_set=' + my_group_set
-            +'&opened_at='+ my_opened_at
+            'opened_at='+ my_opened_at
             +'&opened_by='+ my_opened_by
             +'&assigned_at='+ my_assigned_at
             +'&assigned_by='+ my_assigned_by

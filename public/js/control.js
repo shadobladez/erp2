@@ -81,7 +81,7 @@ function process_addNew () {
         +'&sequence='+ my_sequence
         +'&name='+ my_name
         +'&value='+ my_value
-        +'status='+ my_status;
+        +'&status='+ my_status;
 
 
     $.ajax({
@@ -105,13 +105,15 @@ function select_row(the_id){
 };
 
 function display_form (the_row){
-    $('#jky-id').val(the_row.id);                            $('#jky-status').val(the_row.status);
+    $('#jky-id').val(the_row.id);
+    $('#jky-status').val(the_row.status);
     $('#jky-sequence').val(the_row.sequence);
     $('#jky-name').val(the_row.name);
     $('#jky-value').val(the_row.value);
 };
 
 function process_save (){
+    var my_group_set =  $('#jky-app-select').val();
     var my_id =         $('#jky-id').val();
     var my_status =     $('#jky-status').val();
     var my_sequence =   $('#jky-sequence').val();
@@ -119,6 +121,7 @@ function process_save (){
     var my_value =      $('#jky-value').val();
 
     var my_data = 'id=' + my_id
+        +'&group_set=' + my_group_set
         +'&status='+ my_status
         +'&sequence='+ my_sequence
         +'&name='+ my_name
@@ -128,6 +131,8 @@ function process_save (){
 };
 
 function process_copy (){
+    var my_name =       $('#jky-name').val();
+    $('#jky-name').val(my_name + '-copy');
     process_addNew();
 };
 

@@ -8,3 +8,4 @@ JKY.get_date = function() {
     return my_year + '-' + my_month + '-' + my_day;
 }
 
+module.exports = JKY;

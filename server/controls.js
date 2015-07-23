@@ -8,7 +8,7 @@ var Table = require('./Table.js');
 var app_controls = express();
 var controls = new Table();
 
-var my_table_name: 'Controls';
+var my_table_name = 'Controls';
 
 var get_where = function(the_id) {
 	return ' WHERE ' + my_table_name + '.id = ' + the_id; 
@@ -29,8 +29,8 @@ app_controls.get_rows = function(request, response) {
 	var my_select = request.query.select;
 	var my_filter = request.query.filter;
 	var my_where = '1';
-	if (the_select)		(my_where += ' AND group_set = "' + the_select +  '"';
-	if (the_filter)		(my_where += ' AND name LIKE "%'  + the_filter + '%"';
+	if (my_select)		{my_where += ' AND group_set = "' + my_select +  '"'};
+	if (my_filter)		{my_where += ' AND name LIKE "%'  + my_filter + '%"'};
 	var my_sql = ''
 		+ 'SELECT *'
 		+ '  FROM ' + my_table_name
@@ -47,7 +47,7 @@ app_controls.get_row = function(request, response) {
 		+ '  FROM ' + my_table_name
 		+ get_where(request.query.id)
 		;
-	controls.get_row((my_sql, function(the_row) {
+	controls.get_row(my_sql, function(the_row) {
 		response.json(the_row);
 	});
 };
@@ -77,7 +77,7 @@ app_controls.delete = function(request, response) {
 	var my_sql = ''
 		+ 'DELETE '
 		+ '  FROM ' + my_table_name
-		+ get_where(request.body.id)
+		+ get_where(request.query.id)
 		;
 	controls.delete(my_sql, function(the_return_code) {
 		response.send(the_return_code);

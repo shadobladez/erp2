@@ -44,7 +44,7 @@ app.post	('/contacts', urlencode , function(request, response)   {app_contacts.p
 app.delete	('/contacts'			, function(request, response)   {app_contacts.delete_contacts (request, response)});
 
 //var app_table = require('./../public/js/app_table.js');
-var app_controls = require('./../server/node_controls.js');
-var app_tickets  = require('./../server/node_tickets.js');
+var app_controls = require('./node_controls.js');
+var app_tickets  = require('./node_tickets.js');
 
 module.exports = app;

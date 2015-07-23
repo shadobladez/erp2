@@ -5,7 +5,16 @@
  *		var controls = new Table();
  */
 
-require('./Utils.js');
+//var JKY = require('./Utils.js');
+var JKY = JKY || {};
+
+JKY.get_date = function() {
+    var  my_today = new Date();
+    var  my_year	= my_today.getFullYear();
+    var  my_month	= my_today.getMonth()+1;	if (my_month < 10)	my_month= '0' + my_month;
+    var  my_day		= my_today.getDate ();		if (my_day   < 10)	my_day	= '0' + my_day	;
+    return my_year + '-' + my_month + '-' + my_day;
+}
 
 function Table() {
 	var my_table_host	= '127.0.0.1';
@@ -18,6 +27,7 @@ function Table() {
 	var logger = new (winston.Logger)({
 		transports: [new (winston.transports.File)	({filename: 'logSql/' + JKY.get_date() + '.log'})]
 	});
+    logger.info("start table");
 
 //	----------------------------------------------------------------------------
 	var DataBase = require('mariasql');
@@ -28,13 +38,17 @@ function Table() {
 		, password	: my_password
 //		, multiStatements: true
 	});
+    logger.info("after connect");
 
-	database
+
+    database
 	.on('connect'	, function()		{ console.log('DataBase connected'		)})
 	.on('close'		, function()		{ console.log('DataBase closed'			)})
 	.on('error'		, function(error)	{ console.log('DataBase error: ' + error)})
 	;
-	database.query('USE ' + my_database);
+    logger.info("database connect");
+    database.query('USE ' + my_database);
+    logger.info("after USE");
 
 //	----------------------------------------------------------------------------
 	/*

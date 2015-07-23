@@ -8,7 +8,7 @@ var Table = require('./Table.js');
 var app_tickets = express();
 var tickets = new Table();
 
-var my_table_name: 'Tickets';
+var my_table_name = 'Tickets';
 
 var get_where = function(the_id) {
 	return ' WHERE ' + my_table_name + '.id = ' + the_id; 
@@ -37,8 +37,8 @@ app_tickets.get_rows = function(request, response) {
 	var my_select = request.query.select;
 	var my_filter = request.query.filter;
 	var my_where = '1';
-	if (the_select)		(my_where += ' AND status = "'   + the_select +  '"';
-	if (the_filter)		(my_where += ' AND name LIKE "%' + the_filter + '%"';
+	if (my_select)		{my_where += ' AND status = "'   + my_select +  '"'};
+	if (my_filter)		{my_where += ' AND name LIKE "%' + my_filter + '%"'};
 	var my_sql = ''
 		+ 'SELECT *'
 		+ '  FROM ' + my_table_name
@@ -55,7 +55,7 @@ app_tickets.get_row = function(request, response) {
 		+ '  FROM ' + my_table_name
 		+ get_where(request.query.id)
 		;
-	tickets.get_row((my_sql, function(the_row) {
+	tickets.get_row(my_sql, function(the_row) {
 		response.json(the_row);
 	});
 };
@@ -85,7 +85,7 @@ app_tickets.delete = function(request, response) {
 	var my_sql = ''
 		+ 'DELETE '
 		+ '  FROM ' + my_table_name
-		+ get_where(request.body.id)
+		+ get_where(request.query.id)
 		;
 	tickets.delete(my_sql, function(the_return_code) {
 		response.send(the_return_code);
