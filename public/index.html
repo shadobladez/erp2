@@ -5,7 +5,7 @@
         <title>Advent JKYSoftware</title>
         <link rel="stylesheet" href="root.css" />
         <link rel="stylesheet" href="style.css" />
-        <link rel='stylesheet' href="bootstrap.min.css"/>
+        <link rel='stylesheet' href="bootstrap.css"/>
 
     </head>
     <body>
@@ -27,17 +27,18 @@
             <li id="jky-menu-support" class=""><a onclick="JKY.process_menu('jky-menu-support')">Support</a></li>
         </ul>
 
-        <div>
+        <div id="jky-app-header" style="display: block;">
             <div>
-                <h1>Index</h1>
                 <span id="jky-app-select-line" style="display: block;">
+                <span id="jky-app-select-label">Group Set</span>:
+                <select id="jky-app-select"></select>
+                <input id="jky-app-filter" class="search-query" type="text" placeholder="Search">
+                </span>
+            </div>
+            <div>
                 <button id="jky-action-add-new" class="btn btn-success" type="button" title="Click here to add new record" style="display: inline-block; cursor: pointer;">
                     <span>Add&nbsp;New</span>
                 </button>
-                <input id="jky-app-filter" class="search-query" type="text" placeholder="Search">
-                <span id="jky-app-select-label">Group Set</span>:
-                <select id="jky-app-select"></select>
-                </span>
             </div>
         </div>
 

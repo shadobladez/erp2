@@ -1,0 +1,24 @@
+{"level":"info","message":"start table","timestamp":"2015-07-23T15:57:23.985Z"}
+{"level":"info","message":"start table","timestamp":"2015-07-23T15:57:24.001Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T15:57:24.000Z"}
+{"level":"info","message":"after connect","timestamp":"2015-07-23T15:57:24.002Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T15:57:24.000Z"}
+{"level":"info","message":"database connect","timestamp":"2015-07-23T15:57:24.002Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T15:57:24.000Z"}
+{"level":"info","message":"after USE","timestamp":"2015-07-23T15:57:24.002Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T15:57:32.807Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:00:27.708Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:03:03.651Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:03:58.954Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:05:45.160Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:11:32.465Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:12:26.266Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:14:29.036Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:15:01.961Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T16:15:15.984Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Company Types\"","timestamp":"2015-07-23T16:15:17.160Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:15:36.633Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:18:47.294Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:19:07.483Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:19:42.374Z"}
+{"level":"info","message":"SELECT *  FROM Controls WHERE 1 AND group_set = \"Root\"","timestamp":"2015-07-23T16:21:26.529Z"}
