@@ -1,0 +1,201 @@
+2015-09-22 00:04:36.316356 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:04:36.352072 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:04:36.381044 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:05:37.479449 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:05:37.515374 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:05:37.543300 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:06:14.713047 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:06:14.748784 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:06:14.775703 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:06:18.665029 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:06:18.698851 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:06:18.725844 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:06:34.439519 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:06:34.482370 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:06:34.509368 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:06:39.788606 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:06:39.822405 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:06:39.849436 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:06:41.695761 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900064
+2015-09-22 00:06:44.196931 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:06:55.244574 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:06:58.389494 table profile id  UPDATE Contacts   SET   first_name		= "Pat", last_name		= "Jan", full_name		= "Pat Jan", email			= "pat_jan@hotmail.com" WHERE id = 100004
+2015-09-22 00:06:58.621801 table profile id  UPDATE JKY_Users   SET user_name	= "patjan" WHERE id = 100001
+2015-09-22 00:07:52.309705 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:07:52.334525 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:07:52.361580 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:08:48.021829 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:08:48.050768 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:08:48.077709 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:08:53.467368 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:08:53.500072 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:08:53.530082 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:09:01.599927 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:09:01.637537 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:09:01.657514 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:09:29.349828 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:09:29.385579 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:09:29.404581 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:16:14.495242 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:16:14.532129 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:16:14.550125 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:17:03.426372 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:17:03.462157 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:17:03.481211 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:17:48.411854 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:17:48.437753 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:17:48.456805 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:18:41.703904 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:18:41.739878 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:18:41.768812 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:19:09.482518 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900064
+2015-09-22 00:19:15.117875 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900273
+2015-09-22 00:19:16.511178 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900231
+2015-09-22 00:19:17.465491 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900010
+2015-09-22 00:19:47.607597 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900387
+2015-09-22 00:19:48.840839 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900002
+2015-09-22 00:19:50.000712 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900387
+2015-09-22 00:19:50.661749 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900010
+2015-09-22 00:19:52.378142 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900387
+2015-09-22 00:19:54.302196 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900010
+2015-09-22 00:19:58.912283 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900387
+2015-09-22 00:19:59.674465 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900002
+2015-09-22 00:20:00.288494 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900236
+2015-09-22 00:20:00.857524 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900003
+2015-09-22 00:20:01.598566 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900236
+2015-09-22 00:20:02.658667 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900002
+2015-09-22 00:20:03.565539 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900387
+2015-09-22 00:20:04.501726 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900010
+2015-09-22 00:20:06.128832 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900387
+2015-09-22 00:20:07.445895 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900010
+2015-09-22 00:20:10.195938 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900231
+2015-09-22 00:20:10.992107 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900273
+2015-09-22 00:20:11.377178 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900064
+2015-09-22 00:20:11.865151 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900300
+2015-09-22 00:20:13.423297 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:20:16.307477 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:20:19.885632 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:20:34.350462 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:25:00.756627 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:25:00.794512 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:25:00.823489 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:25:16.707425 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:25:16.743361 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:25:16.762338 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:25:32.030298 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:25:32.065241 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:25:32.096193 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:26:14.675976 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:33:44.344520 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:33:44.380400 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:33:44.401404 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:34:01.492478 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:34:01.522420 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:34:01.545350 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:34:25.003790 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:34:25.039667 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:34:25.057733 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:34:28.682040 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:34:28.706881 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:34:28.725879 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:34:55.493580 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:34:55.522438 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:34:55.544445 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:35:09.960477 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:35:16.228846 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:35:16.267631 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:35:16.289632 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:35:20.470175 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:35:20.497871 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:35:20.516841 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:37:42.251072 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:37:42.291699 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:37:42.320697 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:41:01.015679 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:41:01.068459 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:41:01.089318 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:41:08.579044 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:41:29.583968 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:41:29.617844 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:41:29.635839 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:41:31.043187 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:41:52.282339 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:41:52.316218 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:41:52.343216 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:41:53.461801 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:42:02.012772 table profile id  UPDATE Contacts   SET   first_name		= "Pat", last_name		= "Jan", full_name		= "Pat Jan", email			= "pat_jan@hotmail.com" WHERE id = 100004
+2015-09-22 00:42:02.095306 table profile id  UPDATE JKY_Users   SET user_name	= "patjan" WHERE id = 100001
+2015-09-22 00:42:07.361553 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:42:11.091824 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:42:34.506140 table profile id  UPDATE Contacts   SET   first_name		= "Pat", last_name		= "Jan", full_name		= "Pat Jan", email			= "pat_jan@hotmail.com" WHERE id = 100004
+2015-09-22 00:42:34.586596 table profile id  UPDATE JKY_Users   SET user_name	= "patjan" WHERE id = 100001
+2015-09-22 00:43:42.832552 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:43:42.868502 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:43:42.890461 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:43:46.343203 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:43:46.383085 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:43:46.414108 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:43:57.448544 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:43:57.488338 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:43:57.506343 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:44:02.766320 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 00:44:06.421477 table profile id  UPDATE Contacts   SET   first_name		= "Pat", last_name		= "Jan", full_name		= "Pat Jan", email			= "pat_jan@hotmail.com" WHERE id = 100004
+2015-09-22 00:44:06.520132 table profile id  UPDATE JKY_Users   SET user_name	= "patjan" WHERE id = 100001
+2015-09-22 00:44:31.905060 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:44:31.946800 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:44:31.969798 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:44:48.678061 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900064
+2015-09-22 00:44:52.837309 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:46:24.146747 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:46:24.179527 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:46:24.210527 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:50:08.550342 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:50:08.588887 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:50:08.617862 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:52:26.829999 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:52:26.865877 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:52:26.893886 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:52:29.477447 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900064
+2015-09-22 00:52:35.459908 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:52:35.493817 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:52:35.522805 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:52:36.835997 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900064
+2015-09-22 00:52:41.982405 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900273
+2015-09-22 00:52:42.888600 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900231
+2015-09-22 00:52:43.593102 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900010
+2015-09-22 00:52:44.035032 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900387
+2015-09-22 00:52:44.869019 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900002
+2015-09-22 00:52:45.609025 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900236
+2015-09-22 00:52:48.882527 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "System Keys" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:52:50.543608 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900008
+2015-09-22 00:52:53.590949 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900005
+2015-09-22 00:52:54.232768 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900396
+2015-09-22 00:52:54.665158 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900397
+2015-09-22 00:52:55.046376 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900410
+2015-09-22 00:52:55.404369 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900006
+2015-09-22 00:52:55.848449 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900009
+2015-09-22 00:52:56.414789 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900419
+2015-09-22 00:52:57.344403 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900007
+2015-09-22 00:52:57.761404 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900420
+2015-09-22 00:52:58.361009 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900421
+2015-09-22 00:52:59.943359 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "System Keys" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:53:11.840130 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "System Numbers" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:53:13.138205 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900333
+2015-09-22 00:53:14.806398 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900334
+2015-09-22 00:53:15.341226 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900263
+2015-09-22 00:53:15.660277 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900332
+2015-09-22 00:53:16.096815 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900368
+2015-09-22 00:53:16.357616 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900363
+2015-09-22 00:53:16.753027 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900317
+2015-09-22 00:53:18.717050 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "System Numbers" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:53:35.180963 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:53:43.472564 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 00:53:43.497395 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 00:53:43.516389 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 00:53:45.859966 table Contacts id get_row SELECT Contacts.*, JKY_Users.id				AS      user_id, JKY_Users.user_name		AS      user_name, JKY_Users.user_role		AS      user_role, Companies.full_name		AS   company_name  FROM Contacts  LEFT JOIN   JKY_Users AS JKY_Users	ON  Contacts.id	=		JKY_Users.contact_id  LEFT JOIN    Contacts AS Companies	ON Companies.id	=		 Contacts.company_id WHERE Contacts.id = 100004
+2015-09-22 21:30:09.042692 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 21:30:09.072310 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 21:30:09.091306 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-22 21:30:19.331108 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-22 21:30:19.357953 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-22 21:30:19.384836 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name

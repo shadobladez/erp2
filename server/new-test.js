@@ -9,9 +9,9 @@ var Client = require('mariasql');
 
 var c = new Client(), qcnt = 0;
 c.connect({
-    host: '127.0.0.1',
+    host: '192.168.23.1',
     user: 'root',
-    password: 'gundam8942',
+    password: 'Brazil.18781',
     database: 'erp'
     //multiStatements: true
 });
@@ -129,6 +129,10 @@ app.get('/cities/:name', function(request, response){
            { name: request.params.name, description: description}
            });
    });
+});
+
+app.listen(80, function(){
+	console.log("Listening on port 80");
 });
 
 module.exports = app;

@@ -26,7 +26,13 @@ if (process.env.REDISTOGO_URL) {
 }
 //	End Connection
 
+app.listen(80, function(){
+	console.log("Listening on port 80");
+});
+
+
 var urlencode = bodyParser.urlencoded({ extended: false });
+
 
 app.get		('/controls'			, function(request, response)   { app_controls.get_rows	(request, response) });
 app.get		('/control'				, function(request, response)   { app_controls.get_row	(request, response) });

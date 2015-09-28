@@ -1,0 +1,37 @@
+<div id='jky-loading'>
+	<img src='/img/loading.gif'>
+</div>
+
+<div id='jky-message' class='modal'>
+	<div class='modal-header'>
+		<a class='close' onclick='JKY.set_html("jky-message-body", ""); JKY.hide("jky-message")'>X</a>
+		<h3><span id='jky-message-header'></span></h3>
+	</div>
+	<div class='modal-body'>
+		<div id='jky-message-body'></div>
+	</div>
+</div>
+
+<div id='jky-trace' class='modal'>
+	<div class='modal-header'>
+		<a class='close' onclick='JKY.set_html("jky-trace-body", ""); JKY.hide("jky-trace")'>X</a>
+		<h3>Trace</h3>
+	</div>
+	<div class='modal-body'>
+		<div id='jky-trace-body'></div>
+	</div>
+</div>
+
+<div id='jky-confirm' class='modal hide fade in'>
+	<div class='modal-header'>
+		<a class='close' data-dismiss='modal'>X</a>
+		<h3><span id='jky-confirm-header'></span></h3>
+	</div>
+	<div id='jky-confirm-body' class='modal-body'></div>
+	<div class='modal-footer'>
+		<a id='jky-confirm-yes' class='btn'	onclick='JKY.click_confirm("Yes")'>Yes</a>
+		<a id='jky-confirm-no'  class='btn' onclick='JKY.click_confirm("No")' >No </a>
+	</div>
+</div>
+
+<div id='jky-new-layer'></div>

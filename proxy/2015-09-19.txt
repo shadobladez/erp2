@@ -1,0 +1,6 @@
+2015-09-19 09:54:50.223129 domain: http://support.jkysoftware.com/index.php/api
+2015-09-19 09:54:50.223286 POSTVARS: data={"method":"get_expire", "company_id":100001}
+2015-09-19 13:58:48.883215 domain: http://support.jkysoftware.com/index.php/api
+2015-09-19 13:58:48.883361 POSTVARS: data={"method":"get_expire", "company_id":100001}
+2015-09-19 18:02:20.019485 domain: http://support.jkysoftware.com/index.php/api
+2015-09-19 18:02:20.019627 POSTVARS: data={"method":"get_expire", "company_id":100001}

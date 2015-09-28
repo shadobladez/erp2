@@ -1,0 +1,784 @@
+/* @import url('bootstrap.css'); */
+/* @import url('bootstrap-responsive.css'); */
+@font-face				{ font-family:'arial rounded extraBold'; src:url('../fonts/arial-rounded-extrabold') format('woff'); font-style:normal; font-weight:bold;    }
+@font-face				{ font-family:'arial rounded bold'     ; src:url('../fonts/arial-rounded-bold'     ) format('woff'); font-style:normal; font-weight:bold;    }
+@font-face				{ font-family:'arial rounded light'    ; src:url('../fonts/arial-rounded-light'    ) format('woff'); font-style:normal; font-weight:normal;  }
+@font-face				{ font-family:'arial rounded'          ; src:url('../fonts/arial-rounded-normal'   ) format('woff'); font-style:normal; font-weight:normal;  }
+
+/* required for sticky-footer, html and body elements cannot have any padding or margin */
+*		{margin:0; padding:0; border:0; box-sizing: border-box; font-family:'Lucida Grande',Helvetica,Verdana,Arial,sans-serif;}
+/* *, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}	*/
+
+html	{height:100%}
+body	{height:100%; margin:0; padding:0; font-size:13px;}
+label	{font-weight:bold;}
+Xinput	{height:20px; margin:0 5px 0 0; padding:1px 4px; border:1px solid #cccccc; border-radius:3px;}
+Xinput	{height:24px; margin-bottom:2px ; padding:1px 4px; border:1px solid #cccccc; border-radius:3px;}
+select	{height:24px; margin-bottom:2px ; padding:2px; color:black; border-radius:3px;}
+option	{padding:2px 6px;}
+input.span2			{width:80px; padding:2px 4px;}
+input.search-query	{height:26px; margin-bottom:10px; border-radius:3px;}
+input[type='checkbox']	{margin:0;}
+
+.btn			{padding:2px 10px;}
+.btn-mini		{padding:0px  6px;}
+
+.close			{color:#FFFFFF; opacity:0.8;}
+.nav			{margin-bottom:0px;}
+.nav-tabs > li	{margin-left:10px;}
+.nav-tabs > li > a				{background-color:#999999; color:black; margin-right:0; line-height:10px;}
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover	{background-color:#E5E5E5;}
+.Xinput-append .add-on	{margin-left:-6px; padding:2px;}
+.input-append .add-on	{height:24px; padding:2px 1px 0 3px;}
+
+.modal			{overflow:initial; margin:0; left:none; right:0; width:auto;}
+.modal-header	{height:50px; background:#223870; color:white; border-bottom:1px solid #DDDDDD; border-radius:3px 3px 0 0; font-size:120%; font-weight:bold; padding: 15px 15px 4px;}
+.modal-body		{background:white;}
+.modal-footer	{height:50px; padding:14px 15px; margin-bottom:0; text-align:right; background-color:#B8B8B8; border-top:0px; border-radius:0 0 3px 3px; box-shadow:inset 0 1px 0 #ffffff;}
+.modal-backdrop, .modal-backdrop.fade.in {opacity:0.5;}
+
+.datepicker-dropdown:after	{left:432px;}
+.input-append			{margin-bottom:4px;}
+.Xinput-append input		{height:14px;}
+
+.table thead th {background:#025d91; color:white; vertical-align:middle;}
+.table tbody td {line-height:12px;}
+
+.progress				{margin-bottom:0;}
+
+.tablesorter-default	{margin:0;}
+.tablesorter-default td {background-color:inherit;}
+
+.Draft			{background:green	; color:white;}
+.Active			{background:yellow	; color:black;}
+.Closed			{background:red		; color:black;}
+
+.Future			{background:green	; color:white;}
+.Present		{background:yellow	; color:black;}
+.Past			{background:red		; color:black;}
+
+.left			{text-align:left   !important;}
+.center			{text-align:center !important;}
+.right			{text-align:right  !important;}
+.hide			{display:none;}
+.nowrap			{white-space:nowrap;}
+
+.jky-show		{display:table-row;}
+.jky-hide		{display:none;}
+
+.jky-left		{float:left ;}
+.jky-right		{float:right;}
+.jky-clear		{clear:both ;}
+.jky-bold		{font-weight:bold;}
+.jky-side-set	{margin:10px 0 0 10px; font-weight:bold; color:#7C7BAD;}
+.jky-side-item	{padding-left:20px; cursor:pointer;}
+.jky-side-item.active	{
+	background:#323232;
+	color:white !important;
+}
+.jky-side-item.dev	{
+	color:green;
+}
+.jky-version			{font-size:11px;}
+
+.jky-tab-label			{text-align:right; padding-right:10px; font-weight:bold;}
+.jky-tab-label:after	{content:':';}
+.jky-tab-value			{text-align:right;}
+
+.jky-option-search		{padding-left:20px; margin-top:10px;}
+.jky-option-add-new		{padding-left:20px;}
+
+#Xjky-wrapper			{height:100%; background:none repeat scroll 0 0 white; color:#4C4C4C;}
+#Xjky-wrapper table		{width:100%;}
+
+#jky-header				{height:30px; background-color:#323232; color:#EEEEEE; background-image:linear-gradient(to bottom, #646060, #262626);}
+#jky-header a			{color:#FFFFFF;}
+#jky-header a:hover		{color:#1E9CD9;}
+
+#jky-menus				{float:left; margin:0; padding:4px 0;}
+#jky-menus li			{display:inline; padding:7px 10px; line-height:20px;}
+#jky-menus .active		{background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3); box-shadow:0 1px 2px rgba(0, 0, 0, 0.4) inset; text-shadow:0 0 3px black;}
+
+#jky-user-full-name		{float:right; margin:0 10px;}
+
+#jky-body				{width:100%; height:100%;}
+
+#jky-side-bar			{width:200px; border-right:1px solid #AFAFB6; background:none repeat scroll 0 0 #F0EEEE; vertical-align:top; margin-left:0px;}
+
+#jky-side-header		{width:200px; padding:21px 0; text-align:center;}
+#jky-collapsible-icon	{margin:12px 0;}
+
+#Xjky-side-sales			{height:auto; display:none;}
+#Xjky-side-planning		{height:auto; display:none;}
+#Xjky-side-purchases		{height:auto; display:none;}
+#Xjky-side-production	{height:auto; display:none;}
+#Xjky-side-maintenance	{height:auto; display:none;}
+#Xjky-side-outsource		{height:auto; display:none;}
+#Xjky-side-inventory		{height:auto; display:none;}
+#Xjky-side-invoicing		{height:auto; display:none;}
+#Xjky-side-receivable	{height:auto; display:none;}
+#Xjky-side-fabrics		{height:auto; display:none;}
+#Xjky-side-raws			{height:auto; display:none;}
+#Xjky-side-threads		{height:auto; display:none;}
+#Xjky-side-boxes			{height:auto; display:none;}
+#Xjky-side-dyers			{height:auto; display:none;}
+#Xjky-side-pieces		{height:auto; display:none;}
+#Xjky-side-fabrics		{height:auto; display:none;}
+#Xjky-side-help			{height:auto; display:none;}
+#Xjky-side-admin			{height:auto; display:none;}
+#Xjky-side-support		{height:auto; display:none;}
+
+#jky-side-footer		{width:200px; bottom:0; position:fixed; text-align:center;}
+#jky-contact-us			{color:#C81010; font-weight:bold;}
+
+#jky-graph-header		{}
+#jky-graph-title		{padding:10px; font-size:20px; font-weight:bold;}
+#jky-graph-description	{padding:10px;}
+#jky-graph-body			{padding:10px; background:#ffffff; text-align:center;}
+#jky-graph-footer		{padding:10px;}
+#jky-graph-legend		{}
+
+#jky-form-tabs	 thead th		{border:0px solid #999999;}
+#Xjky-form-tabs	 input		{margin-bottom:0;}
+
+#Xjky-application		{vertical-align:top;}
+#Xjky-application div	{}
+#Xjky-application table	{width:100%;
+	border-collapse:separate;
+/*    table-layout:fixed;	*/
+    width:100%;
+    background-color:#EDEDED;
+    background-image:linear-gradient(to bottom, #FCFCFC, #DEDEDE);
+    border-bottom:1px solid #CACACA;
+    box-shadow:0 1px 0 rgba(255, 255, 255, 0.4), 0 0 9px rgba(0, 0, 0, 0.1);
+    border-collapse:collapse;
+    padding:0;
+	font-size:12px;
+}
+#Xjky-application thead tr		{height:30px;}
+#Xjky-application tbody tr		{height:30px; border-bottom:1px solid #DDDDDD;}
+#Xjky-application thead th		{border:1px solid #999999; padding:4px 20px 4px 4px;}
+#Xjky-application thead th:first-child	{border-left :0px}
+#Xjky-application thead th:last-child	{border-right:0px}
+#Xjky-application tbody td		{margin:2px; height:33px; padding:4px 8px; vertical-align:middle;}
+#Xjky-application input					{height:24px; margin-bottom:2px ; background:white; padding:1px 4px; border:1px solid #cccccc; border-radius:3px;}
+#Xjky-application input[type='checkbox']	{width:20px; margin:0 0 2px 5px;}
+
+#jky-app-header			{
+    background-color: #EDEDED;
+    background-image: linear-gradient(to bottom, #FCFCFC, #DEDEDE);
+    border-bottom: 1px solid #CACACA;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 9px rgba(0, 0, 0, 0.1);
+}
+#jky-app-breadcrumb		{float:left ; margin:12px 10px 8px 10px; height:24px; font-size:18px; font-weight:bold; vertical-align:middle;}
+#jky-app-select-line	{float:left ; margin:10px  0px 0px 30px; font-size:14px;}
+#jky-app-select			{						   width:170px; }
+#jky-app-filter			{float:right; margin:10px; width:300px; border-radius:3px;}
+#jky-app-actions		{float:left ; margin: 6px 10px;}
+#jky-app-actions a		{vertical-align:bottom;}
+#jky-app-more			{float:left ; margin: 6px 10px 6px 80px;}
+#jky-app-add-new		{float:right; margin: 9px 10px; font-weight:bold; color:#0F4D93;}
+#jky-app-counters		{float:right; margin: 9px 10px;}
+#jky-app-navs			{float:right; margin: 6px 10px;}
+#jky-app-displays		{float:right; margin: 6px 10px;}
+
+#jky-app-table thead	{
+	background: none repeat scroll 0 0 #EEEEEE;
+    border-bottom: 2px solid #CACACA;
+    vertical-align: top;
+	font-weight: bold;
+}
+#jky-table tbody		{max-height:300px; overflow-y:visible;}
+
+#jky-table-body			{overflow-y:scroll;}
+
+#jky-action-add-new		{display:none;}
+#jky-action-save		{display:none;}
+#jky-action-copy		{display:none;}
+#jky-action-delete		{display:none;}
+#jky-action-cancel		{display:none;}
+#jky-action-export		{display:inline-block;}
+#jky-action-publish		{display:none;}
+#jky-action-replace		{display:inline-block;}
+#Xjky-action-list		{display:inline-table;}
+#jky-action-graph		{display:none;}
+#jky-action-calendar	{display:none;}
+#Xjky-action-form		{display:inline-table;}
+
+/* -------------------------------------------------------------------------- */
+#jky-form-tabs thead th {border:0; padding:4px 8px 2px 0;}
+
+#jky-form-control		{
+/*	background-color: #EDEDED;	*/
+	background:#025d91; color:white;
+/*    background-image: linear-gradient(to bottom, #FCFCFC, #DEDEDE);	*/
+    border-bottom: 1px solid #CACACA;
+    height:54px;
+	padding:10px 0;
+}
+#jky-form-actions		{float:left ; margin:4px 10px;}
+#jky-form-status		{float:right; margin:4px 10px;}
+#jky-form-status li		{
+    background-color: #EDEDED;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 -22px 0 0;
+    padding: 0 0 0 22px;
+}
+.jky-form-status		{width:95px; height:24px; display: inline; border:1px solid #CCCCCC; margin:0px; padding:0px;}
+.jky-form-display		{margin-top:20px;}
+
+Xli.active 				{background-image: linear-gradient(to bottom, #729FCF, #3465A4);}
+li.active .xlabel		{color:white; font-weight:bold;}
+li.active .arrow span	{background:-moz-linear-gradient(135deg, #3465A4, #729FCF) repeat scroll 0 0 transparent;}
+li .xlabel		{color:black;}
+li .arrow {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 22px;
+}
+li .arrow span {
+}
+
+li .arrow span {
+	background-color:#EDEDED;
+    border-radius:3px;
+    box-shadow: -1px 1px 2px rgba(255, 255, 255, 0.2), -1px 1px 1px rgba(0, 0, 0, 0.2) inset;
+    display: inline-block;
+    height: 26px;
+    margin: 4px 0 -2px -11px;
+    margin-top: 4px;
+    position: relative;
+    transform: rotate(45deg);
+    width: 26px;
+}
+
+
+#jky-form-data	{margin:10px 0; padding:10px 0;}
+#jky-form-title	{padding:10px;}
+#jky-form-id	{font-size:20px; font-weight:bold; padding-top:10px;}
+
+#jky-reset			{top:200px; width:350px; margin:0 auto;}
+#jky-profile		{top:200px; width:450px;}
+#jky-profile input	{width:200px; height:28px;}
+#jky-profile label	{float:left; width:180px; margin:4px 7px 8px; text-align:right; font-weight:bold;}
+
+#jky-form-tabs		{margin:10px 0; padding:10px 0; background-color:#FFFFFF;}
+#jky-form-tabs	th	{background:#FFFFFF; color:#4C4C4C;}
+/* -------------------------------------------------------------------------- */
+.jky-add-color			{width:180px; text-align:left   !important;}
+.jky-empty				{height:28px;}
+.jky-thumb				{width:120px; height:120px; border:4px ridge darkblue; border-radius:6px;}
+.jky-mini				{width: 30px; height: 30px;}
+
+#jky-loading			{display:none; position:fixed; top:50%;left:50%; margin:-50px 0 0 -50px; overflow:auto; z-index:9999;}
+#jky-message			{display:none; position:absolute; top:auto; bottom:0; left:auto ; right:0; width:340px; z-index:2000; border-radius:4px;}
+#jky-message .modal-body{border-radius:0 0 3px 3px;}
+#jky-trace				{display:none; position:absolute; top:auto; bottom:0; left:0	; right:0; width:340px; z-index:2000; border-radius:4px;}
+#jky-trace   .modal-body{border-radius:0 0 3px 3px;}
+#jky-confirm			{display:none; position:absolute; top:auto; bottom:0; left:auto ; right:0; width:340px; z-index:2000; border-radius:4px;}
+#jky-new-layer			{}
+#jky-export				{display:none;}
+
+#jky-search-filter		{margin-bottom:10px;}
+#jky-search-table thead tr	{border-radius:3px;}
+#jky-search-table tbody tr	{height:30px;}
+
+#jky-printable			{display:none}
+
+#jky-sale-search		{width:720px; height:500px;}
+
+/* -------------------------------------------------------------------------- */
+/*
+.jky-average-weight		{width: 75px; text-align:right  !important;}
+.jky-barcode			{width: 90px; text-align:center !important;}
+.jky-batch-code			{width: 80px; text-align:center !important;}
+.jky-checkin-date		{width: 75px; text-align:center !important;}
+.jky-checkin-location	{width: 50px; text-align:center !important;}
+.jky-checkin-boxes		{width: 55px; text-align:right  !important;}
+.jky-checkin-pieces		{width: 50px; text-align:right  !important;}
+.jky-checkin-weight		{width: 75px; text-align:right  !important;}
+.jky-checkout-boxes		{width: 50px; text-align:right  !important;}
+.jky-checkout-location	{width: 50px; text-align:center !important;}
+.jky-checkout-number	{width: 50px; text-align:center !important;}
+.jky-composition		{width:150px; text-align:center !important;}
+.jky-delivered-date		{width: 75Px; text-align:center !important;}
+.jky-density			{width: 40px; text-align:right  !important;}
+.jky-diameter			{width: 40px; text-align:right  !important;}
+.jky-dyer-name			{width: 80px; text-align:center !important;}
+.jky-expected-date		{width: 75px; text-align:center !important;}
+.jky-expected-weight	{width: 75px; text-align:right  !important;}
+.jky-fabric-price		{width: 45px; text-align:right  !important;}
+.jky-filler				{width: 40px;}
+.jky-galao-price		{width: 45px; text-align:right  !important;}
+.jky-gola-price			{width: 45px; text-align:right  !important;}
+.jky-incoming-number	{width: 60px; text-align:center !important;}
+.jky-inspected-by		{width:120px;}
+.jky-inputs				{width: 40px; text-align:right  !important;}
+.jky-invoice-date		{width: 75px; text-align:center !important;}
+.jky-invoice-weight		{width: 75px; text-align:right  !important;}
+.jky-invoice-amount		{width: 60px; text-align:right  !important;}
+.jky-ftp-number			{width: 60px; text-align:center !important;}
+.jky-labels-printed		{width: 45px; text-align:right  !important; margin-right:4px;}
+.jky-lanes				{width: 40px; text-align:right  !important;}
+.jky-lane-type			{width:200px; text-align:left   !important;}
+.jky-loadout-number		{width: 80px; text-align:center !important;}
+.jky-machine-name		{width: 80px; text-align:center !important;}
+.jky-nfe-dl				{width: 60px; text-align:right  !important;}
+.jky-nfe-tm				{width: 60px; text-align:right  !important;}
+.jky-nfe-dl				{width: 60px; text-align:center !important;}
+.jky-nfe-tm				{width: 60px; text-align:center !important;}
+.jky-number-of-boxes	{width: 50px; text-align:right  !important;}
+.jky-number-of-cones	{width: 45px; text-align:right  !important;}
+.jky-number-of-pieces	{width: 50px; text-align:right  !important;}
+.jky-order-number		{width: 50px; text-align:center !important;}
+.jky-ordered-date		{width: 75px; text-align:center !important;}
+.jky-ordered-pieces		{width: 50px; text-align:right  !important;}
+.jky-partner-name		{width: 80px; text-align:left	!important;}
+.jky-product-code		{width: 80px; text-align:center	!important;}
+.jky-produced-by		{width: 60px; text-align:center !important;}
+.jky-produced-date		{width: 75px; text-align:center !important;}
+.jky-produced-pieces	{width: 50px; text-align:right  !important;}
+.jky-purchase-number	{width: 50px; text-align:center !important;}
+.jky-punho-price		{width: 45px; text-align:right  !important;}
+.jky-quality			{width: 90px; text-align:center !important;}
+.jky-quotation-number	{width: 60px; text-align:center !important;}
+.jky-quoted-date		{width: 75px; text-align:center !important;}
+.jky-quoted-pieces		{width: 50px; text-align:right  !important;}
+.jky-quoted-weight		{width: 75px; text-align:right  !important;}
+.jky-real-weight		{width: 75px; text-align:right  !important;}
+.jky-received-boxes		{width: 55px; text-align:right  !important;}
+.jky-received-date		{width: 75px; text-align:center !important;}
+.jky-received-weight	{width: 75px; text-align:right  !important;}
+.jky-rejected-pieces	{width: 50px; text-align:right  !important;}
+.jky-remarks			{width:200px; text-align:center !important;}
+.jky-request-number		{width: 50px; text-align:center !important;}
+.jky-requested-boxes	{width: 50px; text-align:right  !important;}
+.jky-requested-weight	{width: 75px; text-align:right  !important;}
+.jky-reserved-boxes		{width: 50px; text-align:right  !important;}
+.jky-reserved-pieces	{width: 50px; text-align:right  !important;}
+.jky-returned-pieces	{width: 50px; text-align:right  !important;}
+.jky-returned-weight	{width: 75px; text-align:right  !important;}
+.jky-sale-number		{width: 50px; text-align:center !important;}
+.jky-scheduled-date		{width: 75px; text-align:center !important;}
+.jky-sequence			{width: 35px; text-align:center !important;}
+.jky-shipdyer-number	{width: 80px; text-align:center !important;}
+.jky-source-doc			{width: 70px; text-align:center !important;}
+.jky-state				{width: 45px; text-align:center !important;}
+.jky-status				{width: 65px; text-align:center !important;}
+.jky-supplier-name		{width: 80px; text-align:center !important;}
+.jky-tdyer-number		{width: 50px; text-align:center !important;}
+.jky-unit-price			{width: 50px; text-align:right  !important;}
+.jky-weighed-by			{width:120px;}
+.jky-width				{width: 40px; text-align:right  !important;}
+
+.jky-color-name				{width:280px;}
+
+.jky-td-batch-boxes			{width: 60px; text-align:right  !important;}
+.jky-td-batch-value			{width: 60px; text-align:right  !important;}
+.jky-td-batch-weight		{width: 75px; text-align:right  !important;}
+.jky-td-batch-price			{width: 70px; text-align:right  !important;}
+.jky-td-batchin-code		{width:100px; text-align:center !important;}
+.jky-td-color-date			{width: 75px; text-align:center !important;}
+.jky-td-color-pieces		{width: 50px; text-align:right  !important;}
+.jky-td-color-price			{width: 50px; text-align:right  !important;}
+.jky-td-color-weight		{width: 75px; text-align:right  !important;}
+.jky-td-customer-name		{width:100px; text-align:center !important;}
+.jky-td-line-weight			{width: 75px; text-align:right  !important;}
+.jky-td-line-date			{width: 75px; text-align:center !important;}
+.jky-td-labels-printed		{width: 75px; text-align:center !important;}
+.jky-td-product-name		{width:280px; text-align:left   !important;}
+.jky-td-purchase-number		{width: 90px; text-align:left   !important;}
+.jky-td-thread-name			{width:230px; text-align:left   !important;}
+.jky-td-thread-date			{width: 75px; text-align:center !important;}
+.jky-td-thread-weight		{width: 75px; text-align:right  !important;}
+
+.jky-color-row-name			{width:150px; margin-right:4px; text-align:left   !important;}
+.jky-product-row-name		{width:250px; margin-right:4px; text-align:left   !important;}
+.jky-purline-row-number		{width: 60px; margin-right:4px; text-align:center !important;}
+
+.jky-box-checkbox			{width: 30px; text-align:center;}
+.jky-box-barcode			{width: 90px; text-align:center !important;}
+.jky-box-sequence			{width: 35px; text-align:center !important;}
+.jky-box-status				{width: 65px; text-align:center !important;}
+.jky-box-batch-number		{width: 80px; text-align:center !important;}
+.jky-box-number-of-boxes	{width: 40px; text-align:center !important;}
+.jky-box-number-of-cones	{width: 40px; text-align:center !important;}
+.jky-box-average-weight		{width: 50px; text-align:right  !important;}
+.jky-box-real-weight		{width: 50px; text-align:right  !important;}
+.jky-box-supplier-name		{width: 80px; text-align:left   !important;}
+.jky-box-thread-name		{width:220px; text-align:left   !important;}
+
+
+.jky-boxes-location			{width: 50px; text-align:center !important;}
+.jky-boxes-date-in			{width: 80px; text-align:center !important;}
+.jky-boxes-weight			{width: 60px; text-align:right  !important;}
+.jky-boxes-checkin			{width: 60px; text-align:right  !important;}
+.jky-boxes-reserved			{width: 60px; text-align:right  !important;}
+
+.jky-thread-batchin			{width:100px; text-align:center !important;}
+.jky-thread-checkin			{width: 60px; text-align:right  !important;}
+.jky-thread-color-name		{width:180px; text-align:left   !important;}
+.jky-thread-date-in			{width: 80px; text-align:center !important;}
+.jky-thread-reserved		{width: 60px; text-align:right  !important;}
+.jky-thread-weight			{width: 60px; text-align:right  !important;}
+
+.jky-thread-needed-date		{width: 80px; text-align:right  !important;}
+.jky-thread-requested-weight{width: 80px; text-align:right  !important;}
+.jky-thread-checkout-date	{width: 80px; text-align:right  !important;}
+.jky-thread-checkout-weight	{width: 80px; text-align:right  !important;}
+
+.jky-color-pieces			{width: 45px; text-align:right  !important;}
+.jky-color-name				{width:155px; text-align:left   !important;}
+.jky-color-name input		{width:120px; text-align:left   !important;}
+.jky-color-name a			{padding:5px;}
+.jky-color-weight			{width: 45px; text-align:right  !important;}
+.jky-color-date				{width: 80px; text-align:right  !important;}
+.jky-color-type				{width:100px; text-align:left   !important;}
+
+.jky-pieces-barcode			{width: 90px; text-align:center !important;}
+.jky-pieces-status			{width: 65px; text-align:center !important;}
+.jky-pieces-number-of-pieces{width: 40px; text-align:center !important;}
+.jky-pieces-produced-by		{width: 60px; text-align:center !important;}
+.jky-pieces-checkin-weight	{width: 65px; text-align:right  !important;}
+.jky-pieces-checkin-date	{width: 80px; text-align:center !important;}
+.jky-pieces-quality			{width: 90px; text-align:center !important;}
+.jky-pieces-remarks			{width:200px; text-align:center !important;}
+*/
+.jky-search-checkout-pieces	{width: 65px; text-align:right  !important;}
+.jky-search-color-name		{width:319px; text-align:left   !important;}
+.jky-search-color-type		{width: 50px; text-align:center !important;}
+.jky-search-color-date		{width: 80px; text-align:center !important;}
+.jky-search-customer-name	{width:110px; text-align:left   !important;}
+.jky-search-dyer-name		{width:270px; text-align:left   !important;}
+.jky-search-ftp-number		{width: 85px;}
+.jky-search-loadout-number	{width:100px;}
+.jky-search-machine-name	{width:270px; text-align:left   !important;}
+.jky-search-machine-type	{width: 50px; text-align:center !important;}
+.jky-search-machine-brand	{width: 50px; text-align:center !important;}
+.jky-search-nick-name		{width:120px; text-align:left   !important;}
+.jky-search-ordered-date	{width: 80px; text-align:center !important;}
+.jky-search-ordered-pieces	{width: 55px; text-align:right  !important;}
+.jky-search-product-id		{display:none;}
+.jky-search-product-name	{width:420px; text-align:left   !important;}
+.jky-search-product-type	{width: 50px; text-align:center !important;}
+.jky-search-product-peso	{width: 50px; text-align:right  !important;}
+.jky-search-product-units	{width: 50px; text-align:right  !important;}
+.jky-search-requested-date	{width: 80px; text-align:center !important;}
+.jky-search-requested-pieces{width: 65px; text-align:right  !important;}
+.jky-search-sold-date		{width: 50px; text-align:center !important;}
+.jky-search-sold-pieces		{width: 55px; text-align:right  !important;}
+.jky-search-transport-name	{width:270px; text-align:left   !important;}
+.jky-search-supplier-id		{display:none;}
+.jky-search-supplier-name	{width: 70px; text-align:left   !important;}
+.jky-search-composition-name{width:450px; text-align:left   !important;}
+.jky-search-quoted-date		{width: 85px; text-align:center !important;}
+.jky-search-quoted-pieces	{width: 50px; text-align:right  !important;}
+.jky-search-quoted-weight	{width: 50px; text-align:right  !important;}
+.jky-search-delta-pieces	{visibility:hidden; width:0;}
+.jky-search-delta-weight	{visibility:hidden; width:0;}
+
+.jky-search-date			{text-align:center	!important;}
+.jky-search-boxes			{text-align:right	!important;}
+.jky-search-weight			{text-align:right	!important;}
+.jky-search-count			{text-align:right	!important;}
+
+.jky-pane-lines th		{background:white;}
+/* -------------------------------------------------------------------------- */
+#jky-search-color-name	{text-transform:capitalize;}
+#jky-search-dyer-name	{text-transform:capitalize;}
+
+/* -------------------------------------------------------------------------- */
+#jky-boxes-layer		{width:350px;}
+.jky-boxes-line			{width:260px; text-align:right; font-weight:bold;}
+.jky-boxes-line input		{width: 60px; text-align:right;}
+.jky-boxes-label		{width:170px; float:left; font-weight:bold; text-align:right;}
+
+/*	---------------------------------------------------------------------------- */
+
+#Xjky-wrapper table		{height:100%; width:100%;}
+#Xjky-application		{background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAKUlEQVQIHWO8e/fufwYsgAUkJigoiCIF5DMyoYggcUiXgNnBiGQKmAkARpcEQeriln4AAAAASUVORK5CYII=");}
+#jky-side-bar			{display:none;}
+#jky-app-header			{display:none;}
+#jky-app-table			{display:none;}
+#jky-app-graph			{display:none;}
+#jky-app-form			{display:none;}
+
+#jky-app-table thead th tr	{background:#025D91 !important; color:#FFFFFF !important; vertical-align:middle;}
+
+#Xjky-log-logo			{width:180px; height:46px; margin:200px auto 10px auto; text-align:center;}
+#Xjky-log-form			{width:370px; margin:0 auto; background:#E6EEEF; border:1px solid gray; border-radius:4px;}
+
+#jky-app-upload			{margin-left:20px;}
+#jky-machine-type input	{margin-top: 2px;}
+#jky-machine-type span	{padding:2px 20px 0 4px; vertical-align:middle;}
+#jky-product-type		{margin:2px 0;}
+#jky-product-type input	{height:15px; margin-top:0px;}
+#jky-product-type span	{padding:0 20px 0 4px; vertical-align:middle;}
+
+#jky-pieces-layer		{width:350px;}
+.jky-pieces-label		{width:170px; float:left; margin-top:5px; font-weight:bold; text-align:right;}
+.jky-pieces-line		{width:260px; text-align:right; font-weight:bold;}
+.jky-pieces-line input	{width: 60px; text-align:right;}
+#jky-pieces-location	{text-transform:uppercase;}
+
+#jky-division-layer		{width:400px;}
+.jky-division-line		{width:320px; text-align:right; font-weight:bold;}
+.jky-division-line label{width:170px; float:left; font-weight:bold; text-align:right;}
+.jky-division-line input{width: 90px; text-align:right;}
+.jky-unit				{width: 50px; float:right;}
+
+#jky-drawing			{float: left; margin:7px;}
+#jky-drawing-img		{width:120px; height:120px; border:4px ridge darkblue;}
+#jky-photo				{float: left; margin:7px;}
+#jky-photo-img			{width:120px; height:120px; border:4px ridge black;}
+
+#jky-input-barcode		{color:red; width:90px; }
+#jky-input-barcode	input	{width:90px; }
+#jky-input-message		{color:red;}
+
+#jky-form-tabs	textarea{width:570px; height:100px;}
+
+.jky-color-name			{text-transform:capitalize;}
+.jky-dyer-name			{text-transform:capitalize;}
+.jky-alert				{color:#CC0000; font-weight:bold;}
+.jky-error				{color:#CC0000;}
+.jky-line				{background-color:#FFFFFF; width:100%;}
+.jky-not-found			{color:  red; text-align:center !important;}
+.jky-ok					{color:#4C4C4C;}
+.jky-status				{width: 90px;}
+.jky-large-digit		{width: 80px; text-align:center	!important; font-size:200%; font-weight:bold; text-transform:uppercase;}
+
+.jky-form-key			{font-size:14px; font-weight:bold;}
+
+.jky-form-line			{clear:both; height:26px;}
+.jky-form-free			{clear:both;}
+.jky-form-label			{float:left; width:160px; margin:3px 7px; text-align:right; font-weight:bold;}
+.jky-form-label-s		{float:left; width:140px; margin:3px 7px; text-align:right; font-weight:bold;}
+.jky-form-label-2		{float:left; width:160px; margin:3px 7px; text-align:right; font-weight:bold;}
+.jky-form-label-3		{float:left; width:160px; margin:3px 7px; text-align:right; font-weight:bold;}
+.jky-form-header		{float:left; 			  				  text-align:right; font-weight:bold; padding:2px 6px !important; margin-bottom:2px !important;}
+.jky.form-box			{width:500px; height:300px;}
+
+.jky-form-amount		{width: 80px; text-align:right  !important;}
+.jky-form-barcode		{width: 95px; text-align:left   !important;}
+.jky-form-batch			{width: 80px; text-align:left   !important;}
+.jky-form-boxes			{width: 80px; text-align:right  !important;}
+.jky-form-city			{width:246px; text-align:left   !important; text-transform:capitalize;}
+.jky-form-code			{width: 80px; text-align:left   !important;}
+.jky-form-date			{width:150px; text-align:left	!important; height:24px !important;}
+.jky-form-district		{width: 70px; text-align:center !important;}
+.jky-form-email			{width:300px; text-align:left   !important;}
+
+.jky-form-yes-no		{width:135px; float:left;}
+.jky-form-yes-no input	{margin:1px;}
+.jky-form-yes-no span	{padding:1px 10px 0 4px; vertical-align:middle;}
+
+.jky-form-history		{width:500px; height:500px;}
+
+.jky-form-action		{width: 80px; text-align:left   !important;}
+.jky-form-by			{width:200px; text-align:left   !important;}
+.jky-form-input			{width: 80px; text-align:right  !important; height:24px !important;}
+.jky-form-integer		{width: 60px; text-align:right  !important;}
+.jky-form-location		{width: 60px; text-align:left	!important; text-transform:uppercase;}
+.jky-form-name			{width:300px; text-align:left   !important;}
+.jky-form-normal		{width:300px; text-align:left   !important;}
+.jky-form-number		{width: 95px; text-align:left	!important;}
+.jky-form-phone			{width:260px; text-align:left   !important;}
+.jky-form-pieces		{width: 80px; text-align:right  !important;}
+.jky-form-price			{width: 80px; text-align:right  !important;}
+.jky-form-ref			{width:130px; text-align:left   !important;}
+.jky-form-sentence		{width:500px; text-align:left   !important;}
+.jky-form-state			{width: 50px; text-align:left   !important;}
+.jky-form-street		{width:140px; text-align:left   !important;}
+.jky-form-string		{width:200px; text-align:left   !important;}
+.jky-form-text			{width:570px; height:140px; margin-bottom:2px;}
+.jky-form-type			{width:132px; text-align:left   !important;}
+.jky-form-weight		{width: 80px; text-align:right  !important; margin-right:20px;}
+.jky-form-digit 		{width: 18px; text-align:right  !important;}
+.jky-form-width			{width: 80px; text-align:right  !important; margin-right:20px;}
+.jky-form-zip			{width: 80px; text-align:left   !important;}
+
+.jky-td-action				{width: 35px; text-align:center !important; padding:0 3px !important;}
+.jky-td-amount				{width: 85px; text-align:right  !important;}
+.jky-td-barcode				{width:105px; text-align:center !important;}
+.jky-td-barcode		input	{width:100px; text-align:center !important;}
+.jky-td-batch				{width: 80px;}
+.jky-td-boxes				{width: 85px; text-align:right  !important;}
+.jky-td-boxes		input	{width: 80px; text-align:right  !important;}
+.jky-td-checkbox			{width: 35px; text-align:center !important; padding:0 3px !important;}
+.jky-td-code				{width: 80px; text-align:center !important;}
+.jky-td-code		input	{width: 75px; text-align:center !important;}
+.jky-td-date				{width: 95px; text-align:center !important;}
+.jky-td-date		input	{width: 90px;}
+.jky-td-datetime			{width:135px; text-align:center !important;}
+.jky-td-datetime	input	{width:125px;}
+.jky-td-digit				{width: 50px; text-align:right  !important;}
+.jky-td-digit		input	{width: 30px; text-align:right  !important;}
+.jky-td-discount			{width: 65px; text-align:right	!important;}
+.jky-td-discount	input	{width: 60px; text-align:right	!important;}
+.jky-td-email				{width:120px; text-align:left	!important;}
+.jky-td-extra				{width:100px; text-align:center	!important;}
+.jky-td-extra		input	{width:100px; text-align:center	!important;}
+.jky-td-filler				{width: 60px; text-align:left	!important;}
+.jky-td-filter				{width:300px; text-align:left	!important;}
+.jky-td-icon				{width: 30px; font-size:200%;}
+.jky-td-info				{width: 40px; text-align:right	!important;}
+.jky-td-input				{width: 40px; text-align:right  !important;}
+.jky-td-input		input	{width: 35px; text-align:right	!important;}
+.jky-td-integer				{width: 65px; text-align:right  !important;}
+.jky-td-integer		input	{width: 60px; text-align:right	!important;}
+.jky-td-invoice				{width:100px; text_align:center	!important;}
+.jky-td-hours				{width: 65px; text-align:right  !important;}
+.jky-td-hours		input	{width: 60px; text-align:right	!important;}
+.jky-td-key-s				{width: 85px; text-align:center !important;}
+.jky-td-key-s		input	{width: 45px; text-align:right	!important;}
+.jky-td-key					{width: 80px; text-align:center !important;}
+.jky-td-key			input	{width: 75px;}
+.jky-td-key-m				{width:150px; text-align:left   !important;}
+.jky-td-key-m		input	{width:125px;}
+.jky-td-key-l				{width:205px; text-align:left   !important;}
+.jky-td-key-l		input	{width:170px;}
+.jky-td-key-w				{width:300px; text-align:left   !important;}
+.jky-td-key-w		input	{width:260px; text-transform:capitalize;}
+.jky-td-key-w3				{width:280px; text-align:left   !important;}
+.jky-td-key-w3		input	{width:260px; text-transform:capitalize;}
+.jky-td-label				{width:100px; text-align:right  !important; vertical-align:top !important;}
+.jky-td-location			{width: 70px; text-align:center !important; text-transform:uppercase;}
+.jky-td-location	input	{width: 65px; text-align:center !important; text-transform:uppercase;}
+.jky-td-machine				{width: 80px; text-align:center !important;}
+.jky-td-motive				{width:405px; text-align:left   !important;}
+.jky-td-motive		input	{width:400px;}
+.jky-td-name-s				{width: 85px; text-align:left	!important;}
+.jky-td-name-s		input	{width: 80px;}
+.jky-td-name-l				{width:145px; text-align:left   !important;}
+.jky-td-name-l		input	{width:110px;}
+.jky-td-name-w				{width:335px; text-align:left   !important;}
+.jky-td-name-w		input	{width:300px;}
+.jky-td-normal				{width:145px; text-align:left   !important;}
+.jky-td-normal		input	{width:140px;}
+.jky-td-number				{width: 80px; text-align:center !important;}
+.jky-td-number		input	{width: 75px;}
+.jky-td-number-l			{width:110px; text-align:center !important;}
+.jky-td-number-l	input	{width:105px;}
+.jky-td-phone				{width: 60px; text-align:left	!important;}
+.jky-td-percent				{width: 65px; text-align:right	!important;}
+.jky-td-percent		input	{width: 60px; text-align:right	!important;}
+.jky-td-pieces				{width: 65px; text-align:right	!important;}
+.jky-td-pieces		input	{width: 60px; text-align:right	!important;}
+.jky-td-price				{width: 65px; text-align:right  !important;}
+.jky-td-price		input	{width: 60px; text-align:right  !important;}
+.jky-td-recipe				{width:100px;}
+.jky-td-ref					{width: 85px; text-align:center !important;}
+.jky-td-ref			input	{width: 80px;}
+.jky-td-remarks				{width:100px; color:red; }
+.jky-td-remarks		textarea{width:675px; height:70px;}
+.jky-td-radio				{width: 35px; text-align:center !important; padding:0 3px !important;}
+.jky-td-shift				{width:110px; text-align:center !important;}
+.jky-td-shift		input	{width:105px; text-align:center !important;}
+.jky-td-short				{width:105px; text-align:center !important;}
+.jky-td-short		input	{width:100px; text-align:center !important;}
+.jky-td-status				{width:100px; text-align:center !important;}
+.jky-td-state				{width: 45px; text-align:center !important;}
+.jky-td-state		input	{width: 40px; text-align:center !important;}
+.jky-td-supplier			{width:100px;}
+.jky-td-text-s				{width:145px; text-align:left   !important;}
+.jky-td-text-s		input	{width:140px;}
+.jky-td-text-l				{width:245px; text-align:left   !important;}
+.jky-td-text-l		input	{width:240px;}
+.jky-td-text-w				{width:305px; text-align:left   !important;}
+.jky-td-text-w		input	{width:300px;}
+.jky-td-thread				{width:250px; text-align:left   !important;}
+.jky-td-thread		input	{width:245px; margin-top:2px;}
+.jky-td-thread		select	{width:270px; margin-top:2px;}
+.jky-td-thumb				{width: 30px; text-align:center !important; padding:0 !important;}
+.jky-td-units				{width: 65px; text-align:right	!important;}
+.jky-td-units		input	{width: 60px; text-align:right	!important;}
+.jky-td-yes-no				{width: 40px; text-align:center !important;}
+.jky-td-weight				{width: 85px; text-align:right  !important;}
+.jky-td-weight		input	{width: 80px; text-align:right	!important;}
+.jky-td-width				{width: 85px; text-align:right  !important;}
+.jky-td-width		input	{width: 80px; text-align:right	!important;}
+
+.jky-ftp-number				{width:60px;}
+
+.jky-pane-thead tr th		{background:#E5E5E5;}
+.jky-pane-thead input		{margin:0;}
+.jky-pane-tbody				{background:white; border-top:4px solid #025D91;}
+.jky-pane-tbody	tr td		{height:24px; padding:2px 8px;}
+.jky-pane-tfoot				{border-top:4px solid #025D91;}
+ jky-pane-tfoot	tr			{border-bottom:1px solid black;}
+.jky-pane-tfoot	tr td		{background:#999999; color:black; height:24px; padding:2px 8px;}
+
+.jky-color-name			{width:100px;}
+.jky-product-name		{width:240px; text-transform:capitalize;}
+.jky-machine-name		{text-transform:capitalize; text-align:center !important;}
+
+tbody .jky-config-line		{height:22px;}
+
+#jky-form-tabs thead th {background:#E5E5E5; color:black; vertical-align:middle;}
+#jky-form-tabs tbody td {line-height:12px;}
+
+#jky-table-body tr							{height:24px;}
+#jky-table-body td							{line-height:18px;}
+#jky-table-body input[type="checkbox"]		{margin:7px;}
+
+#jky-app-table thead tr		{height:52px;}
+#jky-app-table tbody tr		{height:30px; border-bottom:1px solid #DDDDDD;}
+#jky-app-table thead th		{border:1px solid #999999; padding:4px 20px 4px 4px;}
+#jky-app-table thead th:first-child	{border-left :0px}
+#jky-app-table thead th:last-child	{border-right:0px}
+#jky-app-table tbody td		{margin:2px; height:32px; padding:4px 8px; vertical-align:middle;}
+#jky-app-table input					{height:24px; margin-bottom:2px ; background:white; padding:1px 4px; border:1px solid #cccccc; border-radius:3px;}
+#jky-app-table input[type='checkbox']	{width:20px; margin:0 0 2px 5px;}
+
+#jky-form-data input {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    height: 24px;
+    margin-bottom: 2px;
+    padding: 1px 4px;
+}
+
+#jky-form-tabs input {
+	border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    height: 24px;
+    margin-bottom: 2px;
+    padding: 1px 4px;
+}
+
+#jky-form-tabs td {
+	height: 33px;
+    margin: 2px;
+    padding: 4px 4px 2px 4px;
+    vertical-align: middle;
+}
+
+#jky-log-form input		{height:28px;}
+
+#jky-product-info label		{float:left; clear:both; width:100px; margin-right:10px; text-align:right;}
+#jky-product-info span		{float:left; width:80%;}
+#jky-remarks				{width:300px;}
+
+.jky-issued			{width: 85px;}
+.jky-amount			{width: 80px; text-align:right !important;}
+.jky-motive			{width:240px;}
+
+#jky-total-amount	{font-size:130%; font-weight:bold; color:red;}
+
+.jky-action			{padding:4px 8px !important;}
+
+/* -------------------------------------------------------------------------- */
+.jky-wrapper		{width:100%; height:100%; background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAKUlEQVQIHWO8e/fufwYsgAUkJigoiCIF5DMyoYggcUiXgNnBiGQKmAkARpcEQeriln4AAAAASUVORK5CYII=");}
+.jky-wrapper table	{width:100%; height:100%;}
+.jky-dialog			{position:absolute; top:50%; left:50%; margin:-190px 0 0 -175px;}
+.jky-log-logo		{margin-bottom:10px; text-align:center;}
+.jky-log-form		{width:350px; height:330px; border:1px solid gray; border-radius:4px;}
+.jky-log-form label {font-weight:bold;}
+.jky-log-form input {width:300px; height:28px;}
+
+.jky-application	{vertical-align:top;}
+

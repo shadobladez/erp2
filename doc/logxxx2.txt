@@ -1,0 +1,7 @@
+JKY software logo	180 X 45 margin-bottom:10px
+modal-header		32		15px 15px  4px 15px
+modal-footer		30		14px 14px 14px 14px
+
+login form			370 X 330	-195 X -185
+loghelp form		370 X 326	-195 X -185
+logout2 form		370 X 243	-195 X -185

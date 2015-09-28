@@ -1,0 +1,12 @@
+2015-09-18 01:56:09.915854 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-18 01:56:09.951264 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-18 01:56:09.980255 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name
+2015-09-18 01:56:19.806161 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-18 01:56:21.453136 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900064
+2015-09-18 01:56:45.834601 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-18 01:56:47.808648 table Controls id get_row SELECT Controls.*  FROM Controls WHERE Controls.id = 900064
+2015-09-18 01:57:13.976245 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-18 01:57:38.991621 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-18 01:57:51.065318 table Controls id get_index SELECT Controls.*  FROM Controls WHERE        Controls.group_set		= "Root" ORDER BY sequence, name ASC LIMIT 250
+2015-09-18 01:57:51.088982 table  id get_users SELECT *   FROM Controls WHERE group_set = "Root" ORDER BY sequence, name
+2015-09-18 01:57:51.116985 table  id get_users SELECT *   FROM Controls WHERE group_set = "Status Codes" ORDER BY sequence, name

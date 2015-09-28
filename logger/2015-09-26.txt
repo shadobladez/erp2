@@ -1,0 +1,134 @@
+
+
+2015-09-26 21:54:59.765303 Program=ajax		 IP=127.0.0.1 +++ 
+version=9.01.01
+environment=development
+control_company=100001
+user_time=2015-09-26 21:54:59
+user_role=visitor
+company_name=JKY Software
+company_logo=JKY-Software.png
+locale=en_US
+permissions=Array ### 
+JKY_session_time=Sat Sep 26 2015 17:54:59 GMT-0700 (Pacific Daylight Time) *** 
+data={"method":"get_session"}
+JKY_session_time=Sat Sep 26 2015 17:54:59 GMT-0700 (Pacific Daylight Time)
+
+2015-09-26 21:54:59.840990 Program=ajax		 IP=127.0.0.1 +++ 
+version=9.01.01
+environment=development
+control_company=100001
+user_time=2015-09-26 21:54:59
+user_role=visitor
+company_name=JKY Software
+company_logo=JKY-Software.png
+locale=en_US
+permissions=Array
+logdate=2015-09-26
+valid_days=3 ### 
+JKY_session_time=Sat Sep 26 2015 17:54:59 GMT-0700 (Pacific Daylight Time) *** 
+data={"method":"get_session"}
+JKY_session_time=Sat Sep 26 2015 17:54:59 GMT-0700 (Pacific Daylight Time)
+ZDEDebuggerPresent=php,phtml,php3
+
+2015-09-26 21:55:09.201518 Program=ajax		 IP=127.0.0.1 +++ 
+version=9.01.01
+environment=development
+control_company=100001
+user_time=2015-09-26 21:54:59
+user_role=visitor
+company_name=JKY Software
+company_logo=JKY-Software.png
+locale=en_US
+permissions=Array
+logdate=2015-09-26
+valid_days=3 ### 
+JKY_session_time=Sat Sep 26 2015 17:54:59 GMT-0700 (Pacific Daylight Time) *** 
+data={"method":"get_session"}
+JKY_session_time=Sat Sep 26 2015 17:54:59 GMT-0700 (Pacific Daylight Time)
+ZDEDebuggerPresent=php,phtml,php3
+
+2015-09-26 21:55:12.436702 Program=ajax		 IP=127.0.0.1 +++ 
+version=9.01.01
+environment=development
+control_company=100001
+user_time=2015-09-26 21:54:59
+user_role=visitor
+company_name=JKY Software
+company_logo=JKY-Software.png
+locale=en_US
+permissions=Array
+logdate=2015-09-26
+valid_days=3 ### 
+JKY_session_time=Sat Sep 26 2015 17:54:59 GMT-0700 (Pacific Daylight Time) *** 
+data={"method":"get_session"}
+JKY_session_time=Sat Sep 26 2015 17:54:59 GMT-0700 (Pacific Daylight Time)
+ZDEDebuggerPresent=php,phtml,php3
+
+2015-09-26 21:55:15.088854 Program=ajax		 IP=127.0.0.1 +++ 
+version=9.01.01
+environment=development
+control_company=100001
+user_time=2015-09-26 21:54:59
+user_role=visitor
+company_name=JKY Software
+company_logo=JKY-Software.png
+locale=en_US
+permissions=Array
+logdate=2015-09-26
+valid_days=3 ### 
+JKY_session_time=Sat Sep 26 2015 17:55:15 GMT-0700 (Pacific Daylight Time) *** 
+data={"method":"get_session"}
+ZDEDebuggerPresent=php,phtml,php3
+JKY_session_time=Sat Sep 26 2015 17:55:15 GMT-0700 (Pacific Daylight Time)
+
+2015-09-26 21:55:15.127857 Program=ajax		 IP=127.0.0.1 +++ 
+version=9.01.01
+environment=development
+control_company=100001
+user_time=2015-09-26 21:54:59
+user_role=visitor
+company_name=JKY Software
+company_logo=JKY-Software.png
+locale=en_US
+permissions=Array
+logdate=2015-09-26
+valid_days=3 ### 
+JKY_session_time=Sat Sep 26 2015 17:55:15 GMT-0700 (Pacific Daylight Time) *** 
+data={"method":"get_session"}
+JKY_session_time=Sat Sep 26 2015 17:55:15 GMT-0700 (Pacific Daylight Time)
+ZDEDebuggerPresent=php,phtml,php3
+
+2015-09-26 21:55:30.145715 Program=ajax		 IP=127.0.0.1 +++ 
+version=9.01.01
+environment=development
+control_company=100001
+user_time=2015-09-26 21:54:59
+user_role=visitor
+company_name=JKY Software
+company_logo=JKY-Software.png
+locale=en_US
+permissions=Array
+logdate=2015-09-26
+valid_days=3 ### 
+JKY_session_time=Sat Sep 26 2015 17:55:30 GMT-0700 (Pacific Daylight Time) *** 
+data={"method":"get_session"}
+ZDEDebuggerPresent=php,phtml,php3
+JKY_session_time=Sat Sep 26 2015 17:55:30 GMT-0700 (Pacific Daylight Time)
+
+2015-09-26 21:55:30.178717 Program=ajax		 IP=127.0.0.1 +++ 
+version=9.01.01
+environment=development
+control_company=100001
+user_time=2015-09-26 21:54:59
+user_role=visitor
+company_name=JKY Software
+company_logo=JKY-Software.png
+locale=en_US
+permissions=Array
+logdate=2015-09-26
+valid_days=3 ### 
+JKY_session_time=Sat Sep 26 2015 17:55:30 GMT-0700 (Pacific Daylight Time) *** 
+data={"method":"get_session"}
+JKY_session_time=Sat Sep 26 2015 17:55:30 GMT-0700 (Pacific Daylight Time)
+ZDEDebuggerPresent=php,phtml,php3

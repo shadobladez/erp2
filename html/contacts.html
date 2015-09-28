@@ -1,0 +1,177 @@
+<table id='jky-app-table' class='table table-striped'>
+	<thead>
+		<tr>
+			<th class='jky-td-checkbox'	><input id='jky-check-all' type='checkbox' title="Click here to check all records" /></th>
+			<th class='jky-td-thumb'	><span>							</span></th>
+			<th class='jky-td-name-l'	><span>  Nick Name				</span></th>
+			<th class='jky-td-phone'	><span>     Mobile				</span></th>
+			<th class='jky-td-email'	><span>      Email				</span></th>
+			<th class='jky-td-name-s'	><span>  User Name				</span></th>
+			<th class='jky-td-name-s'	><span>  User Role				</span></th>
+		</tr>
+	</thead>
+
+	<tbody id='jky-table-body'></tbody>
+</table>
+
+<div id='jky-app-form'>
+	<div id='jky-form-control'>
+		<div id='jky-form-actions'>
+			<button id='jky-action-change'		class='btn' type='button' title="Click here to change the status"		><span>Change Status			</span></button>
+		</div>
+		<div id='jky-form-status'>
+			<span>Status</span>:
+			<button disabled class='btn jky-status' type='button'><span id='jky-current-status'></span></button>
+		</div>
+		<div class='jky-clear'></div>
+	</div>
+
+	<div id='jky-form-data'>
+		<div class='jky-left'>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>Nick Name</span>:</div>
+				<input id='jky-nick-name' class='jky-form-name jky-form-key' placeholder='Nick Name' />
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>First Name</span>:</div>
+				<input id='jky-first-name' class='jky-form-name' placeholder='First Name' />
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>Last Name</span>:</div>
+				<input id='jky-last-name' class='jky-form-name' placeholder='Last Name' />
+			</div>
+			<br>
+			<div id='jky-company' class='jky-form-line'>
+				<div class='jky-form-label'><span>Company</span>:</div>
+				<select id='jky-contact-company'></select>
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>Credit Limit</span>:</div>
+				<input id='jky-credit-limit' class='jky-form-price' />
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>Phone</span>:</div>
+				<input id='jky-phone' class='jky-form-phone' placeholder='123-456-7890' />
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>Mobile</span>:</div>
+				<input id='jky-mobile' class='jky-form-phone' placeholder='123-456-7890' />
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>Position</span>:</div>
+				<input id='jky-position' class='jky-form-name' placeholder='Purchase Director' />
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>Email</span>:</div>
+				<input id='jky-email' class='jky-form-email' placeholder='Email' />
+			</div>
+			<br>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>User Name</span>:</div>
+				<input id='jky-user-name' class='jky-form-name' placeholder='User Name' />
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>User Role</span>:</div>
+				<select id='jky-user-role'></select>
+			</div>
+		</div>
+		<div id='jky-app-upload' class='jky-left'>
+			<div class='jky-left' style='margin-left:10px;'>
+				<div id='jky-download-photo'>
+					<img id='jky-photo-img' class='jky-thumb' src='/img/placeholder.png' />
+				</div>
+				<a id='jky-upload-photo'><span>Upload Photo</span></a>
+			</div>
+			<div class='jky-clear'></div>
+			<div style='margin-left:10px;'>
+				<div>
+					<span>Progress</span>:
+					<span id='jky-upload-percent'></span>
+					<span id='jky-upload-name'></span>
+				</div>
+				<div class='progress progress-striped active'>
+					<div id='jky-upload-progress' class='bar'></div>
+				</div>
+			</div>
+		</div>
+		<div class='jky-clear'></div>
+		<br>
+
+		<div>
+			<div class='jky-form-label'></div>
+			<div class='jky-form-buttons'>
+				  <button id='jky-action-save'		class='btn btn-success' type='button' title="Click here to save all changes"		><span>Save		</span></button>
+			&nbsp;<button id='jky-action-reset'		class='btn btn-success' type='button' title="Click here to reset the password"		><span>Reset Password</span></button>
+			&nbsp;<button id='jky-action-copy'		class='btn btn-success' type='button' title="Click here to duplicate this record"	><span>Copy		</span></button>
+			&nbsp;<button id='jky-action-delete'	class='btn'				type='button' title="Click here to delete this record"		><span>Delete	</span></button>
+			&nbsp;<button id='jky-action-cancel'	class='btn'				type='button' title="Click here to cancel any changes"		><span>Cancel	</span></button>
+			</div>
+		</div>
+		<div class='jky-clear'></div>
+	</div>
+
+	<div id='jky-form-tabs' class='tabbable'>
+		<ul class='nav nav-tabs' id='cd-ul-tabs'>
+			<li	id='jky-tab-address'		class='active'	><a href='#jky-pane-address'			data-toggle='tab'><span>Address			</span></a></li>
+<!--		<li	id='jky-tab-company'						><a href='#jky-pane-company'			data-toggle='tab'><span>Company			</span></a></li>	-->
+		</ul>
+
+		<div class='tab-content'>
+			<div id='jky-pane-address' class='tab-pane active'>
+				<br>
+				<div class='jky-form-line'><div class='jky-form-label'><span>     ZIP</span>: </div><input id='jky-zip'			class='jky-form-zip'	placeholder='Zip' /></div>
+				<div class='jky-form-line'><div class='jky-form-label'><span> Street1</span>: </div><input id='jky-street1'		class='jky-form-name'	/></div>
+				<div class='jky-form-line'><div class='jky-form-label'><span>  Number</span>: </div><input id='jky-st-number'	class='jky-form-street'	/></div>
+				<div class='jky-form-line'><div class='jky-form-label'><span>     Cpl</span>: </div><input id='jky-st-cpl'		class='jky-form-name'	/></div>
+				<div class='jky-form-line'><div class='jky-form-label'><span> Street2</span>: </div><input id='jky-street2'		class='jky-form-name'	/></div>
+				<div class='jky-form-line'><div class='jky-form-label'><span>    City</span>: </div>
+					<input	id='jky-city'		class='jky-form-city'		placeholder='City'/>
+					<select id='jky-state'		class='jky-form-state'		></select>
+				</div>
+				<div class='jky-form-line'><div class='jky-form-label'><span> Country</span>: </div><select id='jky-country'	class='jky-form-name'></select></div>
+				<div class='jky-form-line'><div class='jky-form-label'><span>District</span>: </div><input  id='jky-district'	class='jky-form-district' /></div>
+				<br>
+				<div class='jky-form-line'><div class='jky-form-label'></div><button id='jky-action-save-address' class='btn btn-success' type='button'><span>Save Address</span></button></div>
+			</div>
+
+			<div id='jky-pane-company' class='tab-pane'>
+				<br>
+				<div class='jky-form-line'>
+					<div class='jky-form-label'><span>Nick Name</span>:</div>
+					<input  id='jky-nick-name' class='jky-form-name' placeholder='Nick Name' />
+				</div>
+				<div class='jky-form-line'>
+					<div class='jky-form-label'><span>Full Name</span>:</div>
+					<input  id='jky-full-name' class='jky-form-name' placeholder='Full Name' />
+				</div>
+				<div id='jky-company' class='jky-form-line'>
+					<div class='jky-form-label'><span>Company</span>:</div>
+					<select id='jky-contact-company'></select>
+				</div>
+				<div class='jky-form-line'>
+					<div class='jky-form-label'><span>Tag</span>:</div>
+					<select id='jky-contact-tag'></select>
+				</div>
+				<div class='jky-form-line'>
+					<div class='jky-form-label'><span id='jky-cnpj-label'>CNPJ</span>:</div>
+					<input  id='jky-cnpj' class='jky-form-normal' />
+				</div>
+				<div class='jky-form-line'>
+					<div class='jky-form-label'><span id='jky-ie-label'>IE</span>:</div>
+					<input  id='jky-ie' class='jky-form-normal' />
+				</div>
+				<div id='jky-website-line' class='jky-form-line'>
+					<div class='jky-form-label'><span> Website</span>:</div>
+					<input id='jky-website' class='jky-form-normal' placeholder='www.jkysoftware.com' />
+				</div>
+				<br>
+				<div class='jky-form-line'><div class='jky-form-label'></div><button id='jky-action-save-company' class='btn btn-success' type='button'><span>Save Company</span></button></div>
+			</div>
+		</div>
+	</div>
+	<div id='jky-form-footer'></div>
+</div>
+
+<div id='jky-body-loaded'></div>
+<script src='js/contacts.js'></script>
+<script src='js/contact_users.js'></script>

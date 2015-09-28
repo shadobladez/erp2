@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+		<title>JKY ERP</title>
+		<meta name='description' 	content='JKY Software - ERP'>
+		<meta name='author' 		content='http://www.jkysoftware.com'>
+		<meta name='viewport' 		content='width=device-width'>
+		<link href='css/bootstrap.2.3.2.css'				rel='stylesheet'>
+		<link href='css/bootstrap-responsive.2.3.2.css'		rel='stylesheet'>
+		<link href='css/bootstrap-datetimepicker.min.css'	rel='stylesheet'>
+		<link href="css/ts/theme.white.css"					rel="stylesheet">
+		<link href='css/JKY.base.css'						rel='stylesheet'>
+	</head>
+
+	<body>
+		<div id='jky-wrapper'>
+			<table>
+
+<thead>
+	<tr id='jky-header'>
+		<td colspan='2'>
+			<ul  id='jky-menus'></ul>
+			<div id='jky-user-full-name'></div>
+		</td>
+		<td></td>
+	</tr>
+</thead>
+	
+<tbody>
+	<tr id='jky-body'>
+		<td id='jky-side-bar'>
+			<div id='jky-side-header'><a id='jky-company-logo'></a></div>
+
+			<div id='jky-side-sales'>
+				<div									class='jky-side-set'><span>Files</span></div>
+				<div id='jky-sales-customers'			class='jky-side-item dev'	><span>Customers			</span></div>
+				<div id='jky-sales-products'			class='jky-side-item dev'	><span>Products				</span></div>
+				<div id='jky-sales-colors'				class='jky-side-item dev'	><span>Colors				</span></div>
+				<div									class='jky-side-set'><span>Sales</span></div>
+				<div id='jky-sales-quotations'			class='jky-side-item dev'	><span>Quotations			</span></div>
+				<div id='jky-sales-quot-products'		class='jky-side-item dev'	><span>Products Quoted		</span></div>
+				<div									class='jky-side-set'><span>								</span></div>
+				<div id='jky-sales-loadouts'			class='jky-side-item dev'	><span>Aggregate Load Outs	</span></div>
+				<div									class='jky-side-set'><span>								</span></div>
+				<div id='jky-sales-sales'				class='jky-side-item dev'	><span>Sales Orders			</span></div>
+			</div>
+
+			<div id='jky-side-planning'>
+				<div									class='jky-side-set'><span>Files</span></div>
+				<div id='jky-planning-threads'			class='jky-side-item dev'	><span>Threads				</span></div>
+				<div id='jky-planning-machines'			class='jky-side-item dev'	><span>Machines				</span></div>
+				<div id='jky-planning-products'			class='jky-side-item dev'	><span>Products				</span></div>
+				<div id='jky-planning-suppliers'		class='jky-side-item dev'	><span>Suppliers			</span></div>
+				<div									class='jky-side-set'><span>Planning</span></div>
+				<div id='jky-planning-osas'				class='jky-side-item dev'	><span>OSAs					</span></div>
+				<div id='jky-planning-orders'			class='jky-side-item dev'	><span>Orders				</span></div>
+				<div id='jky-planning-tdyers'			class='jky-side-item dev'	><span>Thread Dyers			</span></div>
+				<div id='jky-planning-pieces'			class='jky-side-item dev'	><span>Pieces				</span></div>
+			</div>
+
+			<div id='jky-side-purchases'>
+				<div									class='jky-side-set'><span>Purchases</span></div>
+				<div id='jky-purchases-quotations'		class='jky-side-item'		><span>Quotations			</span></div>
+				<div id='jky-purchases-purchases'		class='jky-side-item'		><span>Purchases			</span></div>
+				<div									class='jky-side-set'><span>Invoice Control</span></div>
+				<div id='jky-purchases-on-drafts'		class='jky-side-item'		><span>On Draft Invoices	</span></div>
+				<div id='jky-purchases-on-order-lines'	class='jky-side-item'		><span>On Order Lines		</span></div>
+				<div id='jky-purchases-on-incomings'	class='jky-side-item'		><span>On Incomings			</span></div>
+				<div									class='jky-side-set'><span>Products</span></div>
+				<div id='jky-purchases-by-category'		class='jky-side-item'		><span>By Category			</span></div>
+				<div id='jky-purchases-products'		class='jky-side-item'		><span>Products				</span></div>
+			</div>
+
+			<div id='jky-side-production'>
+				<div									class='jky-side-set'><span>Files</span></div>
+				<div id='jky-production-threads'		class='jky-side-item dev'	><span>Threads				</span></div>
+				<div id='jky-production-machines'		class='jky-side-item dev'	><span>Machines				</span></div>
+				<div id='jky-production-products'		class='jky-side-item dev'	><span>Products				</span></div>
+				<div id='jky-production-suppliers'		class='jky-side-item dev'	><span>Suppliers			</span></div>
+				<div id='jky-production-dyers'			class='jky-side-item dev'	><span>Dyers				</span></div>
+				<div id='jky-production-partners'		class='jky-side-item dev'	><span>Partners				</span></div>
+				<div id='jky-production-ftps'			class='jky-side-item dev'	><span>FTPs					</span></div>
+				<div									class='jky-side-set'><span>Production</span></div>
+				<div id='jky-production-pieces'			class='jky-side-item dev'	><span>Pieces				</span></div>
+			</div>
+
+			<div id='jky-side-maintenance'	></div>
+			<div id='jky-side-inventory'	></div>
+			<div id='jky-side-invoicing'	></div>
+			<div id='jky-side-receivable'	></div>
+
+			<div id='jky-side-threads'>
+				<div									class='jky-side-set'><span>Files</span></div>
+				<div id='jky-threads-threads'			class='jky-side-item dev'	><span>Threads				</span></div>
+				<div id='jky-threads-machines'			class='jky-side-item dev'	><span>Machines				</span></div>
+				<div id='jky-threads-suppliers'			class='jky-side-item dev'	><span>Suppliers			</span></div>
+				<div									class='jky-side-set'><span>Purchases					</span></div>
+				<div id='jky-threads-purchases'			class='jky-side-item dev'	><span>Purchase Orders		</span></div>
+				<div id='jky-threads-purc-lines'		class='jky-side-item dev'	><span>Purchase Lines		</span></div>
+				<div									class='jky-side-set'><span>Incomings					</span></div>
+				<div id='jky-threads-incomings'			class='jky-side-item dev'	><span>Incoming Purchases	</span></div>
+				<div id='jky-threads-batches'			class='jky-side-item dev'	><span>Incoming Batches		</span></div>
+				<div									class='jky-side-set'><span>Outputs						</span></div>
+				<div id='jky-threads-checkouts'			class='jky-side-item dev'	><span>Check Out Orders		</span></div>
+				<div id='jky-threads-batchouts'			class='jky-side-item dev'	><span>Check Out Batches	</span></div>
+				<div									class='jky-side-set'><span>Others						</span></div>
+				<div id='jky-threads-boxes'				class='jky-side-item dev'	><span>Incoming Boxes		</span></div>
+				<div id='jky-threads-forecast'			class='jky-side-item dev'	><span>Forecast				</span></div>
+				<div id='jky-threads-inventory'			class='jky-side-item'		><span>Inventory			</span></div>
+			</div>
+
+			<div id='jky-side-boxes'>
+				<div									class='jky-side-set'><span>Boxes</span></div>
+				<div id='jky-boxes-checkin'				class='jky-side-item dev'	><span>Check In				</span></div>
+				<div id='jky-boxes-return'				class='jky-side-item dev'	><span>Return				</span></div>
+				<div id='jky-boxes-checkout'			class='jky-side-item dev'	><span>Check Out			</span></div>
+				<div id='jky-boxes-info'				class='jky-side-item dev'	><span>Info					</span></div>
+				<div id='jky-boxes-count'				class='jky-side-item'		><span>Count				</span></div>
+			</div>
+
+			<div id='jky-side-dyers'>
+				<div									class='jky-side-set'><span>Files</span></div>
+				<div id='jky-dyers-pieces'				class='jky-side-item dev'	><span>Pieces				</span></div>
+				<div id='jky-dyers-machines'			class='jky-side-item dev'	><span>Machines				</span></div>
+				<div id='jky-dyers-dyers'				class='jky-side-item dev'	><span>Dyers				</span></div>
+				<div id='jky-dyers-transports'			class='jky-side-item dev'	><span>Transports			</span></div>
+				<div									class='jky-side-set'><span>Loads						</span></div>
+				<div id='jky-dyers-loadsales'			class='jky-side-item dev'	><span>Load Out Sales		</span></div>
+				<div									class='jky-side-set'><span>Shipments					</span></div>
+				<div id='jky-dyers-shipdyers'			class='jky-side-item dev'	><span>Ship Dyers			</span></div>
+			</div>
+
+			<div id='jky-side-pieces'>
+				<div									class='jky-side-set'><span>Pieces</span></div>
+				<div id='jky-pieces-checkin'			class='jky-side-item dev'	><span>Check In				</span></div>
+				<div id='jky-pieces-reviser'			class='jky-side-item dev'	><span>Reviser				</span></div>
+				<div id='jky-pieces-weigher'			class='jky-side-item dev'	><span>Weigher				</span></div>
+				<div									class='jky-side-set'><span>								</span></div>
+				<div id='jky-pieces-return'				class='jky-side-item'		><span>Return				</span></div>
+				<div id='jky-pieces-checkout'			class='jky-side-item dev'	><span>Check Out			</span></div>
+				<div									class='jky-side-set'><span>								</span></div>
+				<div id='jky-pieces-rejected'			class='jky-side-item dev'	><span>Rejected				</span></div>
+				<div id='jky-pieces-info'				class='jky-side-item'		><span>Info					</span></div>
+				<div id='jky-pieces-count'				class='jky-side-item'		><span>Count				</span></div>
+			</div>
+
+			<div id='jky-side-receiving'>
+				<div									class='jky-side-set'><span>Files</span></div>
+				<div id='jky-receiving-fabrics'			class='jky-side-item'		><span>Fabrics				</span></div>
+				<div id='jky-receiving-products'		class='jky-side-item dev'	><span>Products				</span></div>
+				<div id='jky-receiving-customers'		class='jky-side-item dev'	><span>Customers			</span></div>
+				<div id='jky-receiving-dyers'			class='jky-side-item dev'	><span>Dyers				</span></div>
+				<div id='jky-receiving-transports'		class='jky-side-item dev'	><span>Transports			</span></div>
+				<div									class='jky-side-set'><span>Receiving					</span></div>
+				<div id='jky-receiving-receive-nfes'	class='jky-side-item dev'	><span>Receive NFEs			</span></div>
+				<div id='jky-receiving-receive-dyers'	class='jky-side-item dev'	><span>Receive Dyers		</span></div>
+				<div id='jky-receiving-loadins'			class='jky-side-item'		><span>Load Ins				</span></div>
+			</div>
+
+			<div id='jky-side-fabrics'>
+				<div									class='jky-side-set'><span>Fabrics</span></div>
+				<div id='jky-fabrics-checkin'			class='jky-side-item'		><span>Check In				</span></div>
+				<div id='jky-fabrics-return'			class='jky-side-item'		><span>Return				</span></div>
+				<div id='jky-fabrics-checkout'			class='jky-side-item'		><span>Check Out			</span></div>
+				<div id='jky-fabrics-info'				class='jky-side-item'		><span>Info					</span></div>
+				<div id='jky-fabrics-count'				class='jky-side-item'		><span>Count				</span></div>
+			</div>
+
+			<div id='jky-side-help'>
+				<div									class='jky-side-set'><span>Help</span></div>
+				<div id='jky-help-tickets'				class='jky-side-item dev'	><span>Tickets				</span></div>
+			</div>
+
+			<div id='jky-side-admin'>
+				<div									class='jky-side-set'><span>Admin</span></div>
+				<div id='jky-admin-configs'				class='jky-side-item dev'	><span>Configs				</span></div>
+				<div id='jky-admin-contacts'			class='jky-side-item dev'	><span>Contacts				</span></div>
+				<div id='jky-admin-companies'			class='jky-side-item dev'	><span>Companies			</span></div>
+				<div id='jky-admin-history'				class='jky-side-item dev'	><span>History				</span></div>
+			</div>
+
+			<div id='jky-side-support'>
+				<div									class='jky-side-set'><span>Support</span></div>
+				<div id='jky-support-controls'			class='jky-side-item dev'	><span>Controls				</span></div>
+				<div id='jky-support-permissions'		class='jky-side-item dev'	><span>Permissions			</span></div>
+				<div id='jky-support-templates'			class='jky-side-item dev'	><span>Templates			</span></div>
+				<div id='jky-support-translations'		class='jky-side-item dev'	><span>Translations			</span></div>
+			</div>
+
+			<div id='jky-side-footer'>
+				<span id='jky-event-which'></span>
+				<div class='jky-version'><span>Version</span>: <span id='jky-version'></span></div>
+				<div><span>Created by</span> <a id='jky-contact-us' href='http://www.jkysoftware.com'><span>JKY Software</span></a></div>
+			</div>
+		</td>
+
+		<td id='jky-application' style='width:100%; height:100%'>
+			<div id='jky-app-header'>
+				<div>
+					<div  class='jky-left'><a onclick='JKY.collapse("jky-side-bar")'><i id='jky-collapsible-icon' class='icon-step-backward'></i></a></div>
+					<div  id='jky-app-breadcrumb'></div>
+					<span id='jky-app-select-line'>
+						<span   id='jky-app-select-label'></span>:
+						<select id='jky-app-select'></select>
+					</span>
+					<input id='jky-app-filter' class='search-query' type='text' placeholder='Search' />
+					<div class='jky-clear'></div>
+				</div>
+
+				<div>
+					<div id='jky-app-actions'>
+						<button id='jky-action-add-new'		class='btn btn-success' type='button' title="Click here to add new record"			><span>Add New	</span></button>
+						<button id='jky-action-combine'		class='btn btn-success' type='button' title="Click here to combine records"			><span>Combine	</span></button>
+						<button id='jky-action-print'		class='btn btn-success' type='button' title="Click here to print selected records"	><span>Print	</span></button>
+						<button id='jky-action-approve'		class='btn btn-success' type='button' title="Click here to approve selected records"><span>Approve	</span></button>
+						<button id='jky-action-clear'		class='btn btn-success' type='button' title="Click here to clear all records"		><span>Clear	</span></button>
+						<button id='jky-action-confirm'		class='btn btn-success' type='button' title="Click here to confirm all records"		><span>Confirm	</span></button>
+					</div>
+					<div id='jky-app-more'>
+						<button id='jky-action-export'		class='btn btn-success' type='button' title="Click here to export as excel file"	><span>Export	</span></button>
+						<button id='jky-action-publish'		class='btn btn-success' type='button' title="Click here to publish the content"		><span>Publish	</span></button>
+						<button id='jky-action-replace'		class='btn btn-success' type='button' title="Click here to replace selected records"><span>Replace	</span></button>
+					</div>
+					<div id='jky-app-displays' class='btn-group'>
+						<button id='jky-action-list'		class='btn' title=    'List View'><i class='icon-align-justify'	></i></button>
+						<button id='jky-action-graph'		class='btn' title= 'Graphic View'><i class='icon-signal'		></i></button>
+						<button id='jky-action-calendar'	class='btn' title='Calendar View'><i class='icon-calendar'		></i></button>
+						<button id='jky-action-form'		class='btn' title=    'Form View'><i class='icon-list-alt'		></i></button>
+					</div>
+					<div id='jky-app-counters'><span id='jky-app-index'></span> of <span id='jky-app-count'></span></div>
+					<div id='jky-app-add-new' ><span>New</span></div>
+					<div id='jky-app-navs' class='btn-group'>
+						<button id='jky-action-prev'		class='btn' title='Previous'	 ><i class='icon-backward'		></i></button>
+						<button id='jky-action-next'		class='btn' title='Next'		 ><i class='icon-forward'		></i></button>
+					</div>
+					<div class='jky-clear'></div>
+				</div>
+			</div>
+
+			<div id='jky-app-body'></div>
+		</td>
+	</tr>
+</tbody>
+
+<tfoot>
+</tfoot>
+
+			</table>
+		</div>
+
+		<div id='jky-utils'></div>
+		<div id='jky-loaded'></div>
+
+	<script src='lib/jquery-2.0.3.min.js'						></script>
+	<script src='lib/jquery-ui-1.10.4.custom.js'				></script>
+	<script src='lib/jquery.cookie.js'							></script>
+	<script src='lib/jquery.md5.js'								></script>
+	<script src='lib/jquery.print.js'							></script>
+	<script src='lib/plupload.full.js'							></script>
+	<script src='lib/bootstrap.min.2.3.2.js'					></script>
+	<script src='lib/bootstrap-datetimepicker.min.js'			></script>
+	<script src='lib/bootstrap-datetimepicker.pt_BR.js'			></script>
+	<script src='lib/jquery.tablesorter.js'						></script>
+	<script src='lib/d3.min.js'									></script>
+
+	<script src='js/JKY.Utils_fn.js'							></script>
+	<script src='js/JKY.Utils.js'								></script>
+	<script src='js/JKY.Application.js'							></script>
+	<script src='js/JKY.Validation.js'							></script>
+	<script src='js/JKY.Upload.js'								></script>
+	<script src='js/JKY.Session.js'								></script>
+	<script src='js/JKY.Translation.js'							></script>
+	<script src='js/JKY.Changes.js'								></script>
+	<script src='js/JKY.D3.js'									></script>
+	<script src='js/home.js'									></script>
+	</body>
+</html>

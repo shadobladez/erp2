@@ -1,0 +1,70 @@
+<table id='jky-app-table' class='table table-striped'>
+	<thead>
+		<tr>
+			<th class='jky-td-checkbox'	><input id='jky-check-all' type='checkbox' title="Click here to check all records" /></th>
+			<th class='jky-td-input'	><span>        Sequence			</span></th>
+			<th class='jky-td-normal'	><span>            Name			</span></th>
+			<th class='jky-td-normal'	><span>           Value			</span></th>
+			<th class='jky-td-status'	><span>          Status			</span></th>
+		</tr>
+	</thead>
+
+	<tbody id='jky-table-body'></tbody>
+</table>
+
+<div id='jky-app-form'>
+	<div id='jky-form-control'>
+		<div id='jky-form-actions'></div>
+		<div id='jky-form-status'></div>
+		<div class='jky-clear'></div>
+	</div>
+
+	<div id='jky-form-data'>
+		<div class='jky-left'>
+			<div class='jky-form-line'><div class='jky-form-label'><span>  Status</span>:</div><select		id='jky-status'></select></div>
+			<div class='jky-form-line'><div class='jky-form-label'><span>Sequence</span>:</div><input		id='jky-sequence'	class='jky-form-input'									/></div>
+			<div class='jky-form-line'><div class='jky-form-label'><span>    Name</span>:</div><input		id='jky-name'		class='jky-form-normal'	placeholder='Name'				/></div>
+			<div class='jky-form-free'><div class='jky-form-label'><span>   Value</span>:</div><textarea	id='jky-value'		class='jky-form-text'	placeholder='Value'></textarea>   </div>
+		</div>
+		<div class='jky-clear'></div>
+		<br>
+
+		<div>
+			<div class='jky-form-label'></div>
+			<div class='jky-form-buttons'>
+				  <button id='jky-action-save'		class='btn btn-success' type='button' title="Click here to save all changes"		><span>Save		</span></button>
+			&nbsp;<button id='jky-action-copy'		class='btn btn-success' type='button' title="Click here to duplicate this record"	><span>Copy		</span></button>
+			&nbsp;<button id='jky-action-delete'	class='btn'				type='button' title="Click here to delete this record"		><span>Delete	</span></button>
+			&nbsp;<button id='jky-action-cancel'	class='btn'				type='button' title="Click here to cancel any changes"		><span>Cancel	</span></button>
+			</div>
+		</div>
+		<div class='jky-clear'></div>
+	</div>
+
+	<div id='jky-form-tabs' class='tabbable'>
+		<ul class='nav nav-tabs' id='cd-ul-tabs'>
+			<li id='jky-tab-remarks'		class='active'	><a href='#jky-pane-remarks'			data-toggle='tab'><span>Remarks			</span></a></li>
+		</ul>
+
+		<div class='tab-content'>
+			<div id='jky-pane-remarks' class='tab-pane active'>
+				<br>
+				<div class='jky-form-remarks'>
+					<div class='jky-form-label'><span>Remarks</span>:</div>
+					<textarea id='jky-remarks'></textarea>
+				</div>
+				<br>
+
+				<div class='jky-form-line'>
+					<div class='jky-form-label'></div>
+					<button id='jky-action-save-remarks' class='btn btn-success' type='button'><span>Save Remarks</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='jky-form-footer'></div>
+</div>
+
+<div id='jky-body-loaded'></div>
+
+<script src='js/controls.js'></script>

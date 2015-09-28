@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+		<title>JKY ERP</title>
+		<meta name='description' 	content='JKY Software - ERP'>
+		<meta name='author' 		content='http://www.jkysoftware.com'>
+		<meta name='viewport' 		content='width=device-width'>
+		<link href='css/bootstrap.2.3.2.css'				rel='stylesheet'>
+		<link href='css/bootstrap-responsive.2.3.2.css'		rel='stylesheet'>
+		<link href='css/bootstrap-datetimepicker.min.css'	rel='stylesheet'>
+		<link href="css/ts/theme.white.css"					rel="stylesheet">
+		<link href='css/JKY.base.css'						rel='stylesheet'>
+	</head>
+
+	<body>
+		<div id='jky-wrapper' class='jky-wrapper'>
+			<div id="jky-dialog" class="jky-dialog"></div>
+			<table>
+				<thead>
+					<tr id='jky-header'>
+						<td colspan='2'>
+							<ul  id='jky-menus'></ul>
+							<div id='jky-user-full-name'></div>
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id='jky-body'>
+						<td id='jky-side-bar'>
+							<div id='jky-side-header'><img id='jky-company-logo' /></div>
+							<div id='jky-side-body'></div>
+							<div id='jky-side-footer'>
+								<div class='jky-version'><span>Version</span>: <span id='jky-version'></span></div>
+								<div><span>Created by</span> <a id='jky-contact-us' href='http://www.jkysoftware.com'><span>JKY Software</span></a></div>
+							</div>
+						</td>
+
+						<td id='jky-application' class='jky-application' style='width:100%; height:100%'>
+							<div id='jky-app-header'>
+								<div>
+									<div  class='jky-left'><a onclick='JKY.collapse("jky-side-bar")'><i id='jky-collapsible-icon' class='icon-step-backward'></i></a></div>
+									<div  id='jky-app-breadcrumb'></div>
+									<span id='jky-app-select-line'>
+										<span   id='jky-app-select-label'></span>:
+										<select id='jky-app-select'></select>
+									</span>
+									<input id='jky-app-filter' class='search-query' type='text' placeholder='Search' />
+									<div class='jky-clear'></div>
+								</div>
+
+								<div>
+									<div id='jky-app-actions'>
+										<button id='jky-action-add-new'		class='btn btn-success' type='button' title="Click here to add new record"			><span>Add New	</span></button>
+										<button id='jky-action-combine'		class='btn btn-success' type='button' title="Click here to combine records"			><span>Combine	</span></button>
+										<button id='jky-action-print'		class='btn btn-success' type='button' title="Click here to print selected records"	><span>Print	</span></button>
+										<button id='jky-action-approve'		class='btn btn-success' type='button' title="Click here to approve selected records"><span>Approve	</span></button>
+										<button id='jky-action-clear'		class='btn btn-success' type='button' title="Click here to clear all records"		><span>Clear	</span></button>
+										<button id='jky-action-confirm'		class='btn btn-success' type='button' title="Click here to confirm all records"		><span>Confirm	</span></button>
+									</div>
+									<div id='jky-app-more'>
+										<button id='jky-action-export'		class='btn btn-success' type='button' title="Click here to export as excel file"	><span>Export	</span></button>
+										<button id='jky-action-publish'		class='btn btn-success' type='button' title="Click here to publish the content"		><span>Publish	</span></button>
+										<button id='jky-action-replace'		class='btn btn-success' type='button' title="Click here to replace selected records"><span>Replace	</span></button>
+									</div>
+									<div id='jky-app-displays' class='btn-group'>
+										<button id='jky-action-list'		class='btn' title=    'List View'><i class='icon-align-justify'	></i></button>
+										<button id='jky-action-graph'		class='btn' title= 'Graphic View'><i class='icon-signal'		></i></button>
+										<button id='jky-action-calendar'	class='btn' title='Calendar View'><i class='icon-calendar'		></i></button>
+										<button id='jky-action-form'		class='btn' title=    'Form View'><i class='icon-list-alt'		></i></button>
+									</div>
+									<div id='jky-app-counters'><span id='jky-app-index'></span> of <span id='jky-app-count'></span></div>
+									<div id='jky-app-add-new' ><span>New</span></div>
+									<div id='jky-app-navs' class='btn-group'>
+										<button id='jky-action-prev'		class='btn' title='Previous'	 ><i class='icon-backward'		></i></button>
+										<button id='jky-action-next'		class='btn' title='Next'		 ><i class='icon-forward'		></i></button>
+									</div>
+									<div class='jky-clear'></div>
+								</div>
+							</div>
+
+							<div id='jky-app-body'></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id='jky-utils'></div>
+		<div id='jky-loaded'></div>
+
+	<script src='lib/jquery-2.0.3.min.js'						></script>
+	<script src='lib/jquery-ui-1.10.4.custom.js'				></script>
+	<script src='lib/jquery.cookie.js'							></script>
+	<script src='lib/jquery.md5.js'								></script>
+	<script src='lib/jquery.print.js'							></script>
+	<script src='lib/plupload.full.js'							></script>
+	<script src='lib/bootstrap.min.2.3.2.js'					></script>
+	<script src='lib/bootstrap-datetimepicker.min.js'			></script>
+	<script src='lib/bootstrap-datetimepicker.pt_BR.js'			></script>
+	<script src='lib/jquery.tablesorter.js'						></script>
+	<script src='lib/d3.min.js'									></script>
+
+	<script src='js/JKY.Utils_fn.js'							></script>
+	<script src='js/JKY.Utils.js'								></script>
+	<script src='js/JKY.Utils.Html.js'							></script>
+	<script src='js/JKY.Utils.Menus.js'							></script>
+	<script src='js/JKY.Application.js'							></script>
+	<script src='js/JKY.Validation.js'							></script>
+	<script src='js/JKY.Upload.js'								></script>
+	<script src='js/JKY.Session.js'								></script>
+	<script src='js/JKY.Translation.js'							></script>
+	<script src='js/JKY.Changes.js'								></script>
+	<script src='js/JKY.D3.js'									></script>
+	<script src='js/home.js'									></script>
+	</body>
+</html>

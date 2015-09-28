@@ -1,0 +1,33 @@
+erp2 - version - 20150907
+
+Server
+	Nodejs - 0.10.4
+	npm - 2.14.2
+	express - 4.13.1
+	node-inspector - 
+	
+	
+	bodyParser -
+	winston -
+	handlebar - 
+	
+	
+	MariaDB - 10.0
+	HiRedis - 
+
+
+
+
+
+
+Client
+	JS - ecmascript 6
+	jquery - 2.1.4
+	bootstrap - 3.3.5
+	html - 5
+	css - 3
+	algular js - 1.4.5
+	mocha js - 
+	tablesorter - 
+	D3 - 
+	

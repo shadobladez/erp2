@@ -1,0 +1,193 @@
+<style>
+.invoice-weight		{width:130px; height:22px; margin-bottom:2px; background-color:green; color:white; text-align:center;}
+.received-weight	{width:130px; height:22px; margin-bottom:2px; background-color:red	; color:white; text-align:center;}
+.key				{fill:black	;}
+.invoice_weight		{fill:green	;}
+.received_weight	{fill:red	;}
+.insider			{fill:white	;}
+.divider			{stroke:white; stroke-opacity:.5;}
+.axis path,
+.axis line			{fill:none; stroke:black; shape-rendering:crispEdges;}
+</style>
+
+<table id='jky-app-table' class='table table-striped'>
+	<thead>
+		<tr>
+			<th class='jky-td-checkbox'	><input id='jky-check-all' type='checkbox' title="Click here to check all records" /></th>
+			<th class='jky-td-name-w'	><span>  File Name				</span></th>
+			<th class='jky-td-key-s'	><span>       File<br>Ext		</span></th>
+			<th class='jky-td-name-s'	><span>       File<br>Size		</span></th>
+			<th class='jky-td-datetime'	><span> Created At				</span></th>
+		</tr>
+	</thead>
+
+	<tbody id='jky-table-body'></tbody>
+</table>
+
+<div id='jky-app-graph'>
+	<div id='jky-graph-header'>
+		<div id='jky-graph-title' class='jky-left'><span>Dual Bar Chart by Date</span></div>
+		<div id='jky-graph-description' class='jky-right' style='text-align:right;'>
+			<div class='invoice-weight' ><span>Invoice Weight </span></div>
+			<div class='received-weight'><span>Received Weight</span></div>
+			<div><span>Unit(Kilos)</span></div>
+		</div>
+		<div class='jky-clear'></div>
+	</div>
+	<div id='jky-graph-body'></div>
+	<div id='jky-graph-footer'>
+	</div>
+</div>
+
+<div id='jky-app-form'>
+	<div id='jky-form-control'>
+		<div id='jky-form-actions'>
+			<button id='jky-action-generate'	class='btn'	type='button' title="Click here to generate check in"	><span>Generate Check In	</span></button>
+			<button id='jky-action-close'		class='btn' type='button' title="Click here to close this receive"	><span>Close Receive		</span></button>
+		</div>
+		<div id='jky-form-status'>
+			<span>Status</span>:
+			<button disabled class='btn jky-status' type='button'><span id='jky-current-status'></span></button>
+		</div>
+		<div class='jky-clear'></div>
+	</div>
+
+	<div id='jky-form-data'>
+		<div class='jky-left'>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>NFe Key</span>:</div>
+				<input  disabled id='jky-nfe-key' class='jky-form-text' />
+				<input  disabled id='jky-nfe-id'  type='hidden' />
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>Vendor</span>:</div>
+				<input  changeable id='jky-vendor-name' class='jky-form-text' />
+				<input  changeable id='jky-vendor-id'	type='hidden' />
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>NFe number</span>:</div>
+				<input  changeable id='jky-nfe-number' class='jky-form-number' />
+			</div>
+		</div>
+		<div class='jky-clear'></div>
+		<br>
+
+		<div class='jky-left'>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>Received Date</span>:</div>
+				<div id='jky-received-date' class='input-append date'>
+					<input changeable class='jky-form-date' type='text' />
+					<span class='add-on'><i data-time-icon='icon-time' data-date-icon='icon-calendar'></i></span>
+				</div>
+			</div>
+			<div class='jky-form-line'>
+				<div class='jky-form-label'><span>Invoice Date</span>:</div>
+				<div id='jky-invoice-date' class='input-append date'>
+					<input changeable class='jky-form-date' type='text' />
+					<span class='add-on'><i data-time-icon='icon-time' data-date-icon='icon-calendar'></i></span>
+				</div>
+			</div>
+		</div>
+		<div class='jky-clear'></div>
+
+		<div class='jky-left'>
+			<div class='jky-form-line'><div class='jky-form-label'><span> Invoice Pieces	</span>:</div><input  changeable	id='jky-invoice-pieces'		class='jky-form-integer'	/></div>
+			<div class='jky-form-line'><div class='jky-form-label'><span> Invoice Weight	</span>:</div><input  changeable	id='jky-invoice-weight'		class='jky-form-weight'		/></div>
+			<div class='jky-form-line'><div class='jky-form-label'><span> Invoice Amount	</span>:</div><input  changeable	id='jky-invoice-amount'		class='jky-form-amount'		/></div>
+		</div>
+		<div class='jky-left'>
+			<div class='jky-form-line'><div class='jky-form-label'><span>Received Pieces	</span>:</div><input  disabled		id='jky-received-pieces'	class='jky-form-integer'	/></div>
+			<div class='jky-form-line'><div class='jky-form-label'><span>Received Weight	</span>:</div><input  disabled		id='jky-received-weight'	class='jky-form-weight'		/></div>
+			<div class='jky-form-line'><div class='jky-form-label'><span>Received Amount	</span>:</div><input  disabled		id='jky-received-amount'	class='jky-form-amount'		/></div>
+		</div>
+		<div class='jky-clear'></div>
+		<br>
+
+		<div>
+			<div class='jky-form-label'></div>
+			<div class='jky-form-buttons'>
+				  <button id='jky-action-insert'	class='btn btn-success' type='button' title="Click here to insert"					><span>Insert	</span></button>
+				  <button id='jky-action-update'	class='btn btn-success' type='button' title="Click here to save all changes"		><span>Update	</span></button>
+			&nbsp;<button id='jky-action-copy'		class='btn btn-success' type='button' title="Click here to duplicate this record"	><span>Copy		</span></button>
+			&nbsp;<button id='jky-action-delete'	class='btn'				type='button' title="Click here to delete this record"		><span>Delete	</span></button>
+			&nbsp;<button id='jky-action-cancel'	class='btn'				type='button' title="Click here to cancel any changes"		><span>Cancel	</span></button>
+			</div>
+		</div>
+		<div class='jky-clear'></div>
+	</div>
+
+	<div id='jky-form-tabs' class='tabbable'>
+		<ul class='nav nav-tabs' id='cd-ul-tabs'>
+			<li	id='jky-tab-items'		class='active'	><a href='#jky-pane-items'		data-toggle='tab'><span>Items			</span></a></li>
+			<li id='jky-tab-remarks'					><a href='#jky-pane-remarks'	data-toggle='tab'><span>Remarks			</span></a></li>
+		</ul>
+
+		<div class='tab-content'>
+			<div id='jky-pane-items' class='tab-pane active'>
+				<table class='table table-striped' >
+					<thead>
+						<tr>
+							<th class='jky-td-action'	></th>
+							<th class='jky-td-name-s'	><span>  Product<br>Code	</span></th>
+							<th class='jky-td-name-w'	><span>  Product<br>Name	</span></th>
+							<th class='jky-td-code'		><span>      NCM			</span></th>
+							<th class='jky-td-weight'	><span>   Weight			</span></th>
+							<th class='jky-td-price'	><span>     Unit<br>Price	</span></th>
+							<th class='jky-td-price'	><span>    Total<br>Amount	</span></th>
+						</tr>
+					</thead>
+					<tbody id='jky-items-body'></tbody>
+					<tfoot>
+						<tr>
+							<td colspan='2'>
+								<button id='jky-items-add-new' class='btn btn-success' type='button'><span>Add New</span></button>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+
+			<div id='jky-pane-remarks' class='tab-pane'>
+				<br>
+				<div class='jky-form-remarks'>
+					<div class='jky-form-label'><span>Remarks</span>:</div>
+					<textarea id='jky-remarks'></textarea>
+				</div>
+				<br>
+
+				<div class='jky-form-line'>
+					<div class='jky-form-label'></div>
+					<button id='jky-action-save-remarks' class='btn btn-success' type='button'><span>Save Remarks</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='jky-form-footer'></div>
+</div>
+
+<div id='jky-fabrics-layer' class='modal hide fade in'>
+	<div class='modal-header'>
+		<a class='close' data-dismiss='modal'>X</a>
+		<h3><span>Print</span>: <span>Labels</span></h3>
+	</div>
+	<div class='modal-body'>
+		<div class='jky-fabrics-line'><div class='jky-fabrics-label'><span>Received Fabrics</span>:</div><input id='jky-fabrics-received-fabrics'	type='text' disabled	/></div>
+		<div class='jky-fabrics-line'><div class='jky-fabrics-label'><span>  Labels Printed</span>:</div><input id='jky-fabrics-labels-printed'		type='text' disabled	/></div>
+		<div class='jky-fabrics-line'><div class='jky-fabrics-label'><span>Labels Unprinted</span>:</div><input id='jky-fabrics-labels-unprinted'	type='text' disabled	/></div>
+		<div class='jky-fabrics-line'><div class='jky-fabrics-label'><span> Labels to Print</span>:</div><input id='jky-fabrics-labels-to-print'	type='text'				/></div>
+		<div class='jky-fabrics-line'><div class='jky-fabrics-label'><span>        Location</span>:</div><input id='jky-fabrics-location'			type='text'				/></div>
+		<div class='jky-fabrics-line'><div class='jky-fabrics-label'><span>  Average Weight</span>:</div><input id='jky-fabrics-average-weight'		type='text'	disabled	/></div>
+	</div>
+	<div class='modal-footer'>
+		<button  id='jky-fabrics-print'  class='btn btn-success'			type='button'><span>Print</span></button>
+		&nbsp;<a id='jky-fabrics-cancel' class='btn' data-dismiss='modal'	type='button'><span>Cancel </span></a>
+	</div>
+</div>
+
+<div id='jky-body-loaded'></div>
+<script src='js/receive_nfes.js'	></script>
+
+<!--script src='js/JKY.Product.js'		></script-->
+<!--script src='js/JKY.PurLine.js'		></script-->
+<!--script src='js/JKY.Load.js'		></script-->
+<!--script src='js/receive_loads.js'	></script-->
